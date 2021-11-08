@@ -1,0 +1,66 @@
+.example-card {
+    max-width: 400px;
+    margin-left: 450px;
+    margin-top: 100px;
+   
+   
+   
+  }
+  .form{
+     margin-left: 70px;
+
+  }
+  .example-margin {
+    margin: 0 10px;
+  }
+  h1{
+
+    color: blue;
+}
+
+.navbar{
+    justify-content: space-between;
+    background-color:lightgray;
+    
+}
+span{
+    padding-right: 1rem;
+    color: navy;
+}
+
+
+/*
+button{
+    margin-left: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+}
+*/
+.example-button-row {
+    display: table-cell;
+    width: 490px;
+  }
+  
+  .example-button-row .mat-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  .example-container .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+  
+  .example-right-align {
+    text-align: right;
+  }
+  
+  input.example-right-align::-webkit-outer-spin-button,
+  input.example-right-align::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+  input.example-right-align {
+    -moz-appearance: textfield;
+  }
+  body{
+    background-color: lightgray;
+  }

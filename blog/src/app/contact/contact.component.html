@@ -1,0 +1,106 @@
+
+      <!--
+    <div class="example-button-row">
+      <button mat-raised-button color="">Home</button>
+      <button mat-raised-button color="primary">DashBoard</button>
+      <button mat-raised-button color="primary">About Us</button>
+      <button mat-raised-button color="primary">Online Help Facility</button>
+      <button mat-raised-button color="primary">Faq</button>
+    </div>
+  </mat-toolbar>
+
+
+<mat-toolbar color="primary" class="navbar">
+    <div class="content login" style="padding-bottom: 0cm;">
+      <img src="./assets/images/hec.svg" alt="" width="150" height="55" style="margin-left:0px; ">
+      
+      </div>
+     
+      <div class="example-sidenav-content" >
+        <button mat-mini-fab color="primary"  class="example-icon"  aria-label="Example icon-button with menu icon" (click)="drawer.toggle()" >
+            <mat-icon>menu</mat-icon>
+          </button>
+          </div>
+        
+      </mat-toolbar>
+     
+        
+      
+ 
+<mat-drawer-container class="example-container" autosize >
+   
+   
+    <mat-drawer #drawer class="example-sidenav" mode="side" style="width: 300px;">
+        
+         
+        
+        <div class="example-button-col">
+           
+        <button mat-button color="primary" href="/home" [routerLink]="['/home']" routerLinkActive="mat-accent">Home</button><br>
+    
+        <button mat-button color="primary">About Us</button><br>
+        <button mat-button color="primary">Online Help Facility</button><br>
+        <button mat-button color="primary">Faq</button><br>
+        <button mat-button color="primary" [routerLink]="['/glossary']" routerLinkActive="mat-accent">Glossary</button><br>
+        <button mat-button color="primary" [routerLink]="['/contact']" routerLinkActive="mat-accent">Contact</button><br>
+        <button mat-raised-button color="warn">Logout</button>
+        </div>
+    </mat-drawer>-->
+    <app-navbar></app-navbar>
+ <mat-card class="example-card">
+   
+    <mat-card-header>
+      
+      <mat-card-title class="form" style="padding-top: 10px;">Contact Us</mat-card-title>
+      <mat-icon style="margin-top: 6px;">phone</mat-icon>
+     
+    </mat-card-header>
+    
+    <mat-card-content class="form" style="padding-top: 10px;">
+    
+        <mat-form-field appearance="fill" style="padding-top: 5px;">
+            <mat-label>Enter your Name</mat-label>
+            <input matInput  required>
+            
+         
+          </mat-form-field>
+          <mat-form-field appearance="fill" style="padding-top: 5px;">
+            <mat-label>Enter your Email</mat-label>
+            <input matInput placeholder="pat@example.com" formControlName="email" required >
+            
+           <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>-->
+          </mat-form-field>
+          <mat-form-field appearance="fill" style="padding-top: 5px;">
+            <mat-label>Enter your message</mat-label>
+           
+            <textarea matInput></textarea>
+           <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>-->
+          </mat-form-field>
+    
+     
+    </mat-card-content>
+    <mat-card-actions class="form" style="padding-top: 10px;"> 
+       
+        
+          <button mat-raised-button (click)="openSnackBar()"color="primary"  >
+           Send message
+          </button>
+        
+    </mat-card-actions>
+
+  </mat-card>
+
+  
+  
+    
+  
+
+
+
+   
+
+  
+
+
+ 
+  

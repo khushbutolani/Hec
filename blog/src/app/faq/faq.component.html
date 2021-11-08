@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+<h1>FAQ
+<mat-progress-bar mode="indeterminate"></mat-progress-bar></h1>
+<mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false"  >
+<mat-expansion-panel-header>
+<mat-panel-title style="color: navy;">
+    What is HEC?
+</mat-panel-title>
+
+</mat-expansion-panel-header>
+<p style="color: navy;" >HEC is a Higher Education institute</p>
+</mat-expansion-panel>
+
+<mat-expansion-panel (opened)="panelOpenState = true"
+(closed)="panelOpenState = false" >
+<mat-expansion-panel-header>
+<mat-panel-title style="color: navy;">
+What is the Role HEC?
+</mat-panel-title>
+
+</mat-expansion-panel-header>
+<p style="color: navy;">To provide funds to PEI</p>
+</mat-expansion-panel>
+</mat-accordion>
+

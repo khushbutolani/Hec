@@ -1,0 +1,52 @@
+<body >
+ <mat-toolbar color="primary" class="navbar">
+    <div class="content login" style="padding-top: 0cm;">
+      <img src="./assets/images/hec.svg" alt="" width="150" height="55" style="margin-left:0px; ">
+      </div>
+    <div class="example-button-row">
+      <button mat-raised-button color="primary">SignUp</button>
+      <a href="/forgotpassword"> <button mat-raised-button color="primary">Change Password</button></a>
+     <a href="/forgotpassword"> <button mat-raised-button color="primary" >Forgot Password</button></a>
+
+    </div>
+  </mat-toolbar>
+<mat-card class="example-card">
+    <mat-card-header>
+     
+      <mat-card-title class="form">Login</mat-card-title>
+     
+    </mat-card-header>
+    
+    <mat-card-content class="form">
+      <mat-form-field appearance="fill">
+        <mat-label>Username</mat-label>
+        <input matInput>
+        <button mat-icon-button matSuffix >
+          <mat-icon>account_circle</mat-icon>
+        </button>
+       
+       
+        
+      </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Enter confirm password</mat-label>
+           <input matInput [type]="hide ? 'password' : 'text'">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+      
+      </mat-form-field>
+          <mat-checkbox class="example-margin">Remember me</mat-checkbox>  
+     
+    </mat-card-content>
+    <mat-card-actions class="form">
+       
+        
+          <button mat-raised-button (click)="openSnackBar()"color="primary"  >
+           Login
+          </button>
+        
+    </mat-card-actions>
+  </mat-card>
+  
+</body>
