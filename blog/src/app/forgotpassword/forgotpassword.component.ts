@@ -9,7 +9,7 @@ import {FormControl, Validators} from '@angular/forms';
 })
 
 export class ForgotpasswordComponent implements OnInit {
-  
+  emailFormControl = new FormControl('', [Validators.required, Validators.email]);
   durationInSeconds = 5;
   constructor(public snackBar: MatSnackBar) { }
 

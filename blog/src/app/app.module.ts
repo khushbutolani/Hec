@@ -18,6 +18,11 @@ import { SingleViewClaimScndComponent } from './single-view-claim-scnd/single-vi
 import { NavbarComponent } from './navbar/navbar.component';
 import { FaqComponent } from './faq/faq.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { InputClaimComponent } from './input-claim/input-claim.component';
+import { NewPeiHomeComponent } from './new-pei-home/new-pei-home.component';
+import { UploadclaimComponent } from './uploadclaim/uploadclaim.component';
+import { HelpFacilityComponent } from './help-facility/help-facility.component';
+
 
 
 
@@ -37,7 +42,13 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     SingleViewClaimScndComponent,
     NavbarComponent,
     FaqComponent,
-    AboutusComponent
+    AboutusComponent,
+    InputClaimComponent,
+    NewPeiHomeComponent,
+    UploadclaimComponent,
+    HelpFacilityComponent,
+   
+  
  
   ],
   imports: [

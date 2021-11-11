@@ -18,6 +18,15 @@ import { MatSortModule } from '@angular/material/sort';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatTabsModule} from '@angular/material/tabs';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {NgxPaginationModule} from 'ngx-pagination';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
+
+
+
 
 
 
@@ -38,7 +47,13 @@ const MaterialComponent = [
   MatSortModule,
   MatExpansionModule,
   MatProgressBarModule,
- MatTabsModule
+ MatTabsModule,
+ ReactiveFormsModule,
+ MatDatepickerModule,
+ MatTooltipModule,
+ NgxPaginationModule,
+ MatProgressSpinnerModule
+
  
   
 ];

@@ -1,0 +1,14 @@
+.example-card {
+    max-width: 400px;
+    display: inline-block;
+     margin: 65px;
+    
+  
+  }
+  .example-card:hover{
+      background-color: lightgray;
+      color: navy;
+      border: 2px solid darkgoldenrod;
+  }
+  
+  

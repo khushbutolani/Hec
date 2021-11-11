@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import {MatSnackBar} from '@angular/material/snack-bar';
+
+
+
 
 
 
@@ -11,17 +14,22 @@ import {MatSnackBar} from '@angular/material/snack-bar';
 })
 export class ContactComponent implements OnInit {
   durationInSeconds = 5;
+  form= new FormGroup({
+    name:new FormControl('',[Validators.required])
+  })
+ 
  
 
-  constructor(public snackBar: MatSnackBar,public fb: FormBuilder) { }
+  constructor(public snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
    
-   
   }
-  reactiveform(){
-    
+  login(){
+    console.warn(this.form.value);
   }
+
+  
   openSnackBar() {
     this.snackBar.openFromComponent(successComponent, {
       duration: this.durationInSeconds * 1000,

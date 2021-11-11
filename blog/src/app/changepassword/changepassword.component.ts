@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatSnackBar} from '@angular/material/snack-bar';
+import {FormControl, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-changepassword',
@@ -7,6 +8,7 @@ import {MatSnackBar} from '@angular/material/snack-bar';
   styleUrls: ['./changepassword.component.css']
 })
 export class ChangepasswordComponent implements OnInit {
+  
   durationInSeconds = 5;
   hide = true;
   constructor(public snackBar: MatSnackBar) { }

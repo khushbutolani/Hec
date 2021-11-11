@@ -1,0 +1,73 @@
+<body>
+    <app-navbar></app-navbar>
+    <h2>Welcome User</h2>
+    <h2 style="text-align: center;">Import and Upload Claim</h2>
+    <div class="example-button-row">
+        <div class="example-flex-container">
+            <input #file type="file"(change)="upload($event)" multiple="false" style="margin-left: 400px;" hidden/>
+            <div class="example-button-container" style="margin-left: 450px; margin-right: 300px;">
+               
+                <button mat-fab color="primary" (click)="file.click()" aria-label="Example icon button with a delete icon" matTooltip="Import Claim" style="margin: 20px;">
+             
+                <mat-icon>add</mat-icon>
+             
+            </button>
+            <button mat-fab color="primary" (click)="onFileChange()" aria-label="Example icon button with a delete icon"  matTooltip="View Claim" style="margin: 20px;">
+                <mat-icon>visibility</mat-icon>
+              </button>
+            <button mat-fab color="primary" (click)="removeSelectedFile(file)" aria-label="Example icon button with a delete icon"  matTooltip="Delete Claim" style="margin:20px">
+                <mat-icon>delete</mat-icon>
+              </button>
+              <button mat-fab color="primary" aria-label="Example icon button with a delete icon"  matTooltip="Upload Claim" style="margin:20px">
+                <mat-icon>upload</mat-icon>
+              </button>
+          </div>
+        
+        
+          </div>
+          </div>
+      
+           
+           <!--    <table class="table">
+              
+
+            <tbody>
+              
+                <tr    *ngFor="let row of data " class="k-alt">
+                    <td  *ngFor="let cell of row  | paginate: config"  >
+                        {{cell}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>-->
+       
+        <div style="text-align:center" >
+  
+           
+            <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+            <table class="table">
+            
+            
+              <tbody>
+                <tr *ngFor="let row of data | paginate: config" class="k-alt">
+                    
+                  <th  *ngFor="let cell of row">
+                      {{cell}}
+                  </th>
+                 
+                </tr>
+              </tbody>
+            </table>
+            
+        <pagination-controls  [maxSize]="maxSize"
+        [directionLinks]="directionLinks"
+        [autoHide]="autoHide"
+        [responsive]="responsive"
+        [previousLabel]="labels.previousLabel"
+        [nextLabel]="labels.nextLabel"
+        [screenReaderPaginationLabel]="labels.screenReaderPaginationLabel"
+        [screenReaderPageLabel]="labels.screenReaderPageLabel"
+       
+        (pageChange)="onPageChange($event) "></pagination-controls>
+  
+    

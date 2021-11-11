@@ -1,0 +1,9 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+.k-alt:first-child{
+    background-color: lightgrey;
+    
+
+}
+mat-spinner{
+    margin-left: 500px;
+}

@@ -1,0 +1,34 @@
+<body>
+    <app-navbar>
+      
+    </app-navbar>
+  
+    <mat-drawer-container class="example-container" autosize>
+        <div class="example-sidenav-content" >
+            <button mat-mini-fab color="primary"  class="example-icon"  aria-label="Example icon-button with menu icon" (click)="drawer.toggle()" >
+                <mat-icon>menu</mat-icon>
+              </button>
+              </div>
+       
+        <mat-drawer #drawer class="example-sidenav" mode="side" opened style="width: 300px;">
+            
+          
+            
+            <div class="example-button-col">
+               Welcome User<br>
+            <button mat-button color="primary"[routerLink]="['/home']" routerLinkActive="mat-accent">Upload New Claim</button><br>
+           
+            <button mat-button color="primary">Uploaded Claim</button><br>
+            <button mat-button color="primary">Online Help Facility</button><br>
+            <button mat-button color="primary">View Claims</button><br>
+            <button mat-button color="primary"[routerLink]="['/glossary']" routerLinkActive="mat-accent">View Student Details</button><br>
+          
+            </div>
+        </mat-drawer>
+        <div class="shadow">
+            <img src="/assets/images/university.jfif" class="university" width="1300" height="450" style="z-index: 1;" >
+            
+        </div>
+        </mat-drawer-container>
+
+    </body>
