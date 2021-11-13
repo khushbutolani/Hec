@@ -1,0 +1,90 @@
+<!-- <mat-toolbar color="primary" class="navbar">
+  <div class="content login" style="padding-bottom: 0cm;">
+    <img src="./assets/images/hec.svg" alt="" width="150" height="55" style="margin-left:0px; ">
+    
+    </div>
+   
+    <div class="example-sidenav-content" >
+      <button mat-mini-fab color="primary"  class="example-icon"  aria-label="Example icon-button with menu icon" (click)="drawer.toggle()" >
+          <mat-icon>menu</mat-icon>
+        </button>
+        </div>
+      
+    </mat-toolbar> -->
+    <app-navbar></app-navbar>
+<h2>View Discrepancy Data</h2>
+<div class="mat-elevation-z8">
+  <table mat-table class="full-width-table" matSort aria-label="Elements">
+    <!-- Id Column -->
+    <ng-container matColumnDef="PEI">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>PEI</th>
+      <td mat-cell *matCellDef="let row">{{row.PEI}}</td>
+    </ng-container>
+
+    <!-- Student Id Column -->
+    <ng-container matColumnDef="FutureAcademicYear">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Future Academic Year</th>
+      <td mat-cell *matCellDef="let row">{{row.FutureAcademicYear}}</td>
+    </ng-container>
+
+    <!-- NIC Column -->
+    <ng-container matColumnDef="AcademicYear">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>AcademicYear</th>
+      <td mat-cell *matCellDef="let row">{{row.AcademicYear}}</td>
+    </ng-container>
+
+    <!-- Surname Column -->
+    <ng-container matColumnDef="FutureSemester">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Future Semester</th>
+      <td mat-cell *matCellDef="let row">{{row.FutureSemester}}</td>
+    </ng-container>
+
+    <!-- Maiden Name (if applicable) Column -->
+    <ng-container matColumnDef="PresentAcademicYear">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Present Academic Year</th>
+      <td mat-cell *matCellDef="let row">{{row.PresentAcademicYear}}</td>
+    </ng-container>
+      <!-- Maiden Name (if applicable) Column -->
+      <ng-container matColumnDef="PresentSemester">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Present Semester</th>
+        <td mat-cell *matCellDef="let row">{{row.PresentSemester}}</td>
+      </ng-container>
+
+    <!-- Other Name Column -->
+    <ng-container matColumnDef="StudentNIC">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Student NIC</th>
+      <td mat-cell *matCellDef="let row">{{row.StudentNIC}}</td>
+    </ng-container>
+
+    <!-- Academic Year And Month Of First Intake Column -->
+    <ng-container matColumnDef="ProgrammeCode">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Programme Code</th>
+      <td mat-cell *matCellDef="let row">{{row.ProgrammeCode}}</td>
+    </ng-container>
+
+    <!-- Academic Year  Column -->
+    <ng-container matColumnDef="AmountDisbursed">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Amount Disbursed</th>
+      <td mat-cell *matCellDef="let row">{{row.AmountDisbursed}}</td>
+    </ng-container>
+    <ng-container matColumnDef="AmounttobepaidbyHEC">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Amount to be paid by HEC
+        </th>
+        <td mat-cell *matCellDef="let row">{{row.AmounttobepaidbyHEC}}</td>
+      </ng-container>
+
+
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <mat-paginator #paginator
+      [length]="dataSource?.data?.length"
+      [pageIndex]="0"
+      [pageSize]="10"
+      [pageSizeOptions]="[5, 10, 20]"
+      aria-label="Select page">
+  </mat-paginator>
+</div>
+

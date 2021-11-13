@@ -23,6 +23,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {NgxPaginationModule} from 'ngx-pagination';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 
 
@@ -52,7 +53,8 @@ const MaterialComponent = [
  MatDatepickerModule,
  MatTooltipModule,
  NgxPaginationModule,
- MatProgressSpinnerModule
+ MatProgressSpinnerModule,
+ Ng2SearchPipeModule
 
  
   

@@ -1,0 +1,78 @@
+
+  <app-navbar></app-navbar>
+  <h2>View Claim</h2>
+  <div class="mat-elevation-z8">
+    <table mat-table class="full-width-table" matSort >
+      <!-- notEligibleReason Column -->
+      <ng-container matColumnDef="CurrentYearOfStudy">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>CurrentYearOfStudy</th>
+        <td mat-cell *matCellDef="let row">{{row.CurrentYearOfStudy}}</td>
+      </ng-container>
+  
+      <!-- Student Id Column -->
+      <ng-container matColumnDef="CurrentSemesterOfStudy">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>CurrentSemesterOfStudy</th>
+        <td mat-cell *matCellDef="let row">{{row.CurrentSemesterOfStudy}}</td>
+      </ng-container>
+  
+      <!-- NIC Column -->
+      <ng-container matColumnDef="ModuleCode">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>ModuleCode</th>
+        <td mat-cell *matCellDef="let row">{{row.ModuleCode}}</td>
+      </ng-container>
+  
+      <!-- Surname Column -->
+      <ng-container matColumnDef="Ft">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Ft</th>
+        <td mat-cell *matCellDef="let row">{{row.Ft}}</td>
+      </ng-container>
+  
+      <!-- Maiden Name (if applicable) Column -->
+      <ng-container matColumnDef="TutionFeesClaimForPayment">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>TutionFeesClaimForPayment</th>
+        <td mat-cell *matCellDef="let row">{{row.TutionFeesClaimForPayment}}</td>
+      </ng-container>
+  
+      <!-- Other Name Column -->
+      <ng-container matColumnDef="AdminFeeClaimForPayment">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>AdminFeeClaimForPayment</th>
+        <td mat-cell *matCellDef="let row">{{row.AdminFeeClaimForPayment}}</td>
+      </ng-container>
+  
+      <!-- Academic Year And Month Of First Intake Column -->
+      <ng-container matColumnDef="StudentStatus">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>StudentStatus</th>
+        <td mat-cell *matCellDef="let row">{{row.StudentStatus}}</td>
+      </ng-container>
+  
+      <!-- Academic Year  Column -->
+      <ng-container matColumnDef="Remarks">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Remarks</th>
+        <td mat-cell *matCellDef="let row">{{row.Remarks}}</td>
+      </ng-container>
+      <ng-container matColumnDef="fundOfTutionFeesByPei">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>fundOfTutionFeesByPei</th>
+        <td mat-cell *matCellDef="let row">{{row.fundOfTutionFeesByPei}}</td>
+      </ng-container>
+      <ng-container matColumnDef="Refund">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Refund</th>
+        <td mat-cell *matCellDef="let row">{{row.Refund}}</td>
+      </ng-container>
+  
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+  
+    <mat-paginator #paginator
+        [length]="dataSource?.data?.length"
+        [pageIndex]="0"
+        [pageSize]="10"
+        [pageSizeOptions]="[5, 10, 20]"
+        aria-label="Select page">
+    </mat-paginator>
+  </div>
+  
+  <button mat-raised-button color="primary" style="margin-left: 500px;" [routerLink]="['/singleviewfst']">Previous</button>
+  <button mat-raised-button color="primary" style="margin-left: 100px;" [routerLink]="['/singleviewclaim']">Next</button>
+

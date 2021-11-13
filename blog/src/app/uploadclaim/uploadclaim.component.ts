@@ -7,13 +7,14 @@ import { MatPaginator, PageEvent } from '@angular/material/paginator';
 
 
 
+
 @Component({
   selector: 'app-uploadclaim',
   templateUrl: './uploadclaim.component.html',
   styleUrls: ['./uploadclaim.component.css']
 })
 export class UploadclaimComponent implements OnInit {
- 
+ filter='';
 totalLength:any;
   data: [][] = []; 
   file: File;
@@ -70,7 +71,7 @@ public labels: any = {
       this.isLoading=true;
       setTimeout(()=>{
         this.isLoading=false;
-      },500)
+      },800)
        // const fileName = evt.target.files[0].name;
         //const target : DataTransfer = <DataTransfer>(evt.target);
     
@@ -97,7 +98,7 @@ public labels: any = {
         element.value='';
       }
      
-
+     
   // MatPaginator Output
   
 

@@ -1,0 +1,69 @@
+
+  <app-navbar></app-navbar>
+  <h2>View Claim</h2>
+  <div class="mat-elevation-z8">
+    <table mat-table class="full-width-table" matSort >
+      <!-- notEligibleReason Column -->
+      <ng-container matColumnDef="FacultyId">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Faculty/School/Cluster Id</th>
+        <td mat-cell *matCellDef="let row">{{row.FacultyId}}</td>
+      </ng-container>
+  
+      <!-- Student Id Column -->
+      <ng-container matColumnDef="ProgrammeCode">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Programme Code</th>
+        <td mat-cell *matCellDef="let row">{{row.ProgrammeCode}}</td>
+      </ng-container>
+  
+      <!-- NIC Column -->
+      <ng-container matColumnDef="CurrentYearOfStudy">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Current Year Of Study</th>
+        <td mat-cell *matCellDef="let row">{{row.CurrentYearOfStudy}}</td>
+      </ng-container>
+  
+      <!-- Surname Column -->
+      <ng-container matColumnDef="CurrentSemesterOfStudy">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Current Semester Of Study</th>
+        <td mat-cell *matCellDef="let row">{{row.CurrentSemesterOfStudy}}</td>
+      </ng-container>
+  
+    
+  
+      <!-- Academic Year And Month Of First Intake Column -->
+      <ng-container matColumnDef="ModuleCode">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Module Code</th>
+        <td mat-cell *matCellDef="let row">{{row.ModuleCode}}</td>
+      </ng-container>
+  
+      <!-- Academic Year  Column -->
+      <ng-container matColumnDef="Ft">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>FT/PT/ODL</th>
+        <td mat-cell *matCellDef="let row">{{row.ft}}</td>
+      </ng-container>
+      <ng-container matColumnDef="StudentStatus">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>StudentStatus</th>
+        <td mat-cell *matCellDef="let row">{{row.StudentStatus}}</td>
+      </ng-container>
+      <ng-container matColumnDef="Remarks">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Remarks</th>
+        <td mat-cell *matCellDef="let row">{{row.Remarks}}</td>
+      </ng-container>
+  
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+  
+    <mat-paginator #paginator
+        [length]="dataSource?.data?.length"
+        [pageIndex]="0"
+        [pageSize]="10"
+        [pageSizeOptions]="[5, 10, 20]"
+        aria-label="Select page">
+    </mat-paginator>
+  </div>
+  
+  <button mat-raised-button color="primary" style="margin-left: 500px;" [routerLink]="['/studentdetail']">Previous</button>
+ 
+
+

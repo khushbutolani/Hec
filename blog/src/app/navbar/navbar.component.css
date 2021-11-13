@@ -1,8 +1,11 @@
 .navbar{
     justify-content: space-between;
-    background-color:lightgray;
-    height: 80px;
+    background-color:white;
+    height:50px;
    margin-right: 400px;
+
+  
+   
     
 }
 span{
@@ -12,23 +15,38 @@ span{
 .example-button-row {
     display: table-cell;
     width: 490px;
-    margin-right: 200px;
+    margin-right: 400px;
   
    
    
   }
 
-  .example-button-col {
-    display: table-cell;
-    width: 490px;
 
-  }
   button{
      margin: 10px;
-    
+    font-size: 18px;
+    color: #CE9C3C;
+    font-family: Arial, Helvetica, sans-serif;
+  
      
      
   }
+  button:hover{
+    font-weight: bold;
+   
+  
+    
+ }
+ .active{
+  font-weight: bold;
+  
+ 
+ 
+
+
+ 
+ 
+ }
   
   .example-button-row .mat-button-base {
     margin: 8px 8px 8px 0;

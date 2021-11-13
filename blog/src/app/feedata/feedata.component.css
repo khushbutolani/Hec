@@ -1,0 +1,13 @@
+.full-width-table {
+    width: 100%;
+  }
+  .mat-elevation-z8{
+    margin: 40px;
+  }
+  h2{
+    font-family: 'Open Sans';
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+    color: #1A3854;
+  }
