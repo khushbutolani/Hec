@@ -1,5 +1,5 @@
 <body>
-    <app-navbar></app-navbar>
+    <app-navbar2></app-navbar2>
     <h2>Welcome User</h2>
     <h2 style="text-align: center;">Import and Upload Claim</h2>
     <div class="example-button-row">
@@ -52,7 +52,9 @@
             </tbody>
         </table>-->
        
-
+</div>
+</div>
+</div>
         <div style="text-align:center" >
         
             <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
@@ -83,4 +85,9 @@
        
         (pageChange)="onPageChange($event) "></pagination-controls>
   
-    
+        <button mat-raised-button  style="margin: 20px; background-color: #0F436D; padding: 10px;color: white; border-radius: 20px;" >Previous
+          <mat-icon>arrow_backward</mat-icon>
+          </button>
+          <button mat-raised-button style="margin: 20px; background-color:#0F436D ; padding: 10px;color: white; border-radius: 20px;" >Next
+            <mat-icon>arrow_forward</mat-icon>
+            </button>
