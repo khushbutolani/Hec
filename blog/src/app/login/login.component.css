@@ -1,13 +1,26 @@
 .example-card {
     max-width: 400px;
-    margin-left: 450px;
+   margin-left: 700px;
     margin-top: 100px;
+    background-color: #0F436D;
    
    
    
   }
+  .navbar{
+    justify-content: space-between;
+    background-color:white;
+    height:140px;
+   margin-right: 400px;
+   
+
+  
+   
+    
+}
   .form{
      margin-left: 70px;
+   
 
   }
   .example-margin {
@@ -18,17 +31,15 @@
     color: blue;
 }
 
-.navbar{
-    justify-content: space-between;
-    background-color:lightgray;
-    
-}
+
 span{
     padding-right: 1rem;
     color: navy;
 }
 
-
+body{
+  background-color: #0F436D;
+}
 /*
 button{
     margin-left: 40%;
@@ -56,11 +67,28 @@ button{
   input.example-right-align::-webkit-outer-spin-button,
   input.example-right-align::-webkit-inner-spin-button {
     display: none;
+    
   }
   
   input.example-right-align {
     -moz-appearance: textfield;
   }
-  body{
-    background-color: lightgray;
+  .column{
+    width: 33.3%;
+    min-height: 350px;
+    float: left;
+   
+    margin-left: 70px;
+  }
+  .img{
+    width: 600px;
+    height: 450px;
+    transition: o.3s;
+  }
+  button:hover{
+    transform: translate(0, -5px);
+
+  }
+  button{
+    border-radius: 10px;
   }

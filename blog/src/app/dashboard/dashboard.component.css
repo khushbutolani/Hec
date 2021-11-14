@@ -1,0 +1,150 @@
+.navbar{
+    justify-content: space-between;
+    background-color:lightgray;
+    height: 80px;
+    
+}
+span{
+    padding-right: 1rem;
+    color: navy;
+}
+.example-button-row {
+    display: table-cell;
+    width: 490px;
+    margin-right: 200px;
+  }
+
+  .example-button-col {
+    display: table-cell;
+    width: 490px;
+
+  }
+  button{
+     margin: 10px;
+     
+     
+  }
+  
+  .example-button-row .mat-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  .example-container {
+    margin: 0px;
+    height: 100%;
+   
+ 
+  }
+  
+ 
+  
+  .example-sidenav {
+    padding: 20px;
+  
+  }
+body{
+  height: 100%;
+  overflow-y: hidden;
+}
+.container {
+  position: absolute;
+  left: 90px;
+  margin: 20px;
+  max-width: 380px;
+  padding: 20px;
+  background-color: white;
+  top: 30%;
+  text-align: left;
+  padding-top: 80px;
+ 
+ 
+
+
+}
+
+  * {
+    box-sizing: border-box;
+  }
+  
+.line{
+  border-bottom: 1px solid #CE9C3C;
+ 
+  
+}
+.example-container {
+    width: 100%;
+    height: 600px;
+    
+   
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    
+   
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+    width: 400px;
+  }
+  .example-button-col {
+    display: table-cell;
+    width: 490px;
+
+  }
+  .arrow{
+    position: absolute;
+    left: 0px;
+   height: 40px;
+  padding-bottom: 45px;
+  padding-top: 25px;
+    background-color: white;
+    top: 50%;
+
+    padding-right: 25px;
+    padding-left: 8px;
+
+  
+   
+
+  }
+  .button{
+      font-size: 20px;
+      margin: 20px;
+     padding-top: 50px;
+     margin-left: 50px;
+     text-align: center;
+     color: #0F436D;
+    padding-bottom: 10px;
+  }
+  .lineside{
+   
+        border-bottom: 1px solid #CE9C3C;
+       margin-left: 50px;
+     
+      
+  }
+  
+  .example-card {
+    width: 310px;
+   height: 140px;
+    transition: 0.3s;
+    background-color: #0F436D;
+    color: #CE9C3C;
+  bottom: 39px;
+  display: inline-block;
+  margin-top: 0px;
+  margin-left: 3px;
+  margin-bottom: 0px;
+  margin-right: 2px;
+
+
+
+  }
+  .example-card:hover {
+    transform: translate(0, -100px);
+  }
+ 

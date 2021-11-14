@@ -53,6 +53,8 @@ import { RepeatdataComponent } from './repeatdata/repeatdata.component';
 import { FunddataComponent } from './funddata/funddata.component';
 import { CustomizedataComponent } from './customizedata/customizedata.component';
 import { FeedataComponent } from './feedata/feedata.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { Navbar2Component } from './navbar2/navbar2.component';
 
 
 
@@ -109,6 +111,8 @@ import { FeedataComponent } from './feedata/feedata.component';
        FunddataComponent,
        CustomizedataComponent,
        FeedataComponent,
+       DashboardComponent,
+       Navbar2Component,
    
   
  

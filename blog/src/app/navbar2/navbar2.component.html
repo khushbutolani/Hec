@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<mat-toolbar color="primary" class="navbar" style="width: 100%;">
+    <div class="content login" style="padding-bottom: 0cm;">
+      <img src="./assets/images/hec.svg" alt="" width="170" height="65" style="margin:50px; ">
+      
+      </div>
+      <div class="example-button-row" >
+      
+      
+           
+          <button mat-button [routerLink]="['/home']" routerLinkActive="active"[routerLinkActiveOptions]={exact:true} class="button">Home</button>
+         
+          <button mat-button  [routerLink]="['/aboutus']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true} class="button">About Us</button>
+          <button mat-button  [routerLink]="['/help']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true} class="button">Online Help Facility</button>
+          <button mat-button [routerLink]="['/faq']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true} class="button">Faq</button>
+          <button mat-button [routerLink]="['/glossary']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true} class="button">Glossary</button>
+          <button mat-button [routerLink]="['/contact']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true} class="button">Contact</button>
+          <button mat-fab style="background-color: #0F436D; color:#CE9C3C; " class="button1"[matMenuTriggerFor]="menu">KT
+            <i class="fa fa-caret-down"></i>
+          </button>
+            
+         
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>Notification</button>
+            <button mat-menu-item>LogOut</button>
+          </mat-menu>
+          </div>
+  
+    
+     <!--
+      <div class="example-sidenav-content" >
+        <button mat-mini-fab color="primary"  class="example-icon"  aria-label="Example icon-button with menu icon" (click)="drawer.toggle()" >
+            <mat-icon>menu</mat-icon>
+          </button>
+          </div>
+        -->
+      </mat-toolbar>
+     
+        
+

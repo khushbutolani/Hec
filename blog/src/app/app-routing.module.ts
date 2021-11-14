@@ -7,6 +7,7 @@ import { ChangepasswordComponent } from './changepassword/changepassword.compone
 import { ContactComponent } from './contact/contact.component';
 import { CustomizeReportComponent } from './customize-report/customize-report.component';
 import { CustomizedataComponent } from './customizedata/customizedata.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { DiscrepancydataComponent } from './discrepancydata/discrepancydata.component';
 import { DispensaryreportComponent } from './dispensaryreport/dispensaryreport.component';
 import { DropoutdataComponent } from './dropoutdata/dropoutdata.component';
@@ -96,6 +97,7 @@ const routes: Routes = [
   {path:'funddata',component:FunddataComponent},
   {path:'customizedata',component:CustomizedataComponent},
   {path:'feedata',component:FeedataComponent},
+  {path:'dashboard',component:DashboardComponent},
  
  
 
