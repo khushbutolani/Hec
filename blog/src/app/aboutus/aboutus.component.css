@@ -4,5 +4,7 @@
   }
   p,ul,li{
       font-size: 18px;
-      text-align: center;
+      text-align: left;
+      margin-left: 60px;
+     
   }

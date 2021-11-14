@@ -5,14 +5,25 @@
     <div class="example-button-row">
         <div class="example-flex-container">
             <input #file type="file"(change)="upload($event)" multiple="false" style="margin-left: 400px;" hidden/>
-            <div class="example-button-container" style="margin-left: 450px; margin-right: 300px;">
+            <div class="example-button-container" style="margin-left: 400px; margin-right: 300px;">
                
-                <button mat-fab color="primary" (click)="file.click()" aria-label="Example icon button with a delete icon" matTooltip="Import Claim" style="margin: 20px;">
+               <!-- <button mat-fab color="primary" (click)="file.click()" aria-label="Example icon button with a delete icon" matTooltip="Import Claim" style="margin: 20px;">-->
              
-                <mat-icon>add</mat-icon>
+                  <button mat-raised-button (click)="file.click()" style="margin: 20px; background-color: #0F436D; padding: 10px;color: white; border-radius: 20px;" >Import
+                  <mat-icon>add</mat-icon>
+                  </button>
+                  <button mat-raised-button (click)="onFileChange()" style="margin: 20px; background-color:#56cc9d ; padding: 10px;color: white; border-radius: 20px;" >View
+                    <mat-icon>visibility</mat-icon>
+                    </button>
+                    <button mat-raised-button (click)="removeSelectedFile(file)" style="margin: 20px; background-color: red; padding: 10px;color: white; border-radius: 20px;" >Delete
+                      <mat-icon>delete</mat-icon>
+                      </button>
+                      <button mat-raised-button  style="margin: 20px; background-color: white; padding: 10px;color: black; border: 1px solid black; border-radius: 20px;" >Upload
+                        <mat-icon>upload</mat-icon>
+                        </button>
              
-            </button>
-            <button mat-fab color="primary" (click)="onFileChange()" aria-label="Example icon button with a delete icon"  matTooltip="View Claim" style="margin: 20px;">
+           
+          <!--  <button mat-fab color="primary" (click)="onFileChange()" aria-label="Example icon button with a delete icon"  matTooltip="View Claim" style="margin: 20px;">
                 <mat-icon>visibility</mat-icon>
               </button>
             <button mat-fab color="primary" (click)="removeSelectedFile(file)" aria-label="Example icon button with a delete icon"  matTooltip="Delete Claim" style="margin:20px">

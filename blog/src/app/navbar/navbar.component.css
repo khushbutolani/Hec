@@ -3,6 +3,7 @@
     background-color:white;
     height:140px;
    margin-right: 400px;
+ 
    
 
   
@@ -17,6 +18,7 @@ span{
     display: table-cell;
     width: 490px;
     margin-right: 400px;
+    padding: 10px;
   
    
    
@@ -41,15 +43,10 @@ span{
  .active{
   font-weight: bold;
   border-bottom: 1px solid #CE9C3C ;
-
-  
- 
- 
-
-
- 
- 
- }
+}
+.hidden{
+  display: none;
+}
   
   .example-button-row .mat-button-base {
     margin: 8px 8px 8px 0;

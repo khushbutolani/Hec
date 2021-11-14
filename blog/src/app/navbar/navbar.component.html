@@ -1,7 +1,7 @@
 
 <mat-toolbar color="primary" class="navbar" style="width: 100%;">
     <div class="content login" style="padding-bottom: 0cm;">
-      <img src="./assets/images/hec.svg" alt="" width="170" height="65" style="margin:50px; ">
+      <a href="/dashboard">      <img src="./assets/images/hec.svg" alt="" width="170" height="65" style="margin:50px; "></a>
       
       </div>
       <div class="example-button-row" >
@@ -15,7 +15,7 @@
           <button mat-button [routerLink]="['/faq']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Faq</button>
           <button mat-button [routerLink]="['/glossary']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Glossary</button>
           <button mat-button [routerLink]="['/contact']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Contact</button>
-          <button mat-raised-button style="font-size: 20px; background-color:#0F436D;padding: 0.2cm; padding-left: 0.5cm; padding-right: 0.5cm; " >Sign In</button>
+          <button mat-raised-button style="font-size: 20px; background-color:#0F436D;padding: 0.2cm; padding-left: 0.5cm; padding-right: 0.5cm; "  [routerLink]="['/login']"  routerLinkActive="hidden" [routerLinkActiveOptions]={exact:true} >Sign In</button>
           </div>
   
     

@@ -55,6 +55,7 @@ import { CustomizedataComponent } from './customizedata/customizedata.component'
 import { FeedataComponent } from './feedata/feedata.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { Navbar2Component } from './navbar2/navbar2.component';
+import { PEIComponent } from './pei/pei.component';
 
 
 
@@ -113,6 +114,7 @@ import { Navbar2Component } from './navbar2/navbar2.component';
        FeedataComponent,
        DashboardComponent,
        Navbar2Component,
+       PEIComponent,
    
   
  

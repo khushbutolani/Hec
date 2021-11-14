@@ -141,15 +141,18 @@ body{
   margin-bottom: 0px;
   margin-right: 10px;
   left: 50px;
-  display: none;
+ 
 
 
 
+  }
+
+
+  .active{
+    font-weight: bold;
+    
   }
   .example-card:hover {
     transform: translate(0, -100px);
   }
-  .pei{
-    font-weight: bold;
-    
-  }
+ 

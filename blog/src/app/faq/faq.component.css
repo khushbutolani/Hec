@@ -1,10 +1,19 @@
 .mat-form-field + .mat-form-field {
-    margin-left: 8px;
+    margin-left: 10px;
+
    
   }
   h1{
       
       text-align: center;
-    color: navy;
+    color: #0F436D;
 
+   
+
+      }
+      .line{
+        border-bottom: 1px solid #CE9C3C;
+        margin-left: 50px;
+        margin-right: 50px;
+      
       }

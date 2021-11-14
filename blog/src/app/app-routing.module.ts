@@ -34,6 +34,7 @@ import { InputClaimComponent } from './input-claim/input-claim.component';
 
 import { LoginComponent } from './login/login.component';
 import { NewPeiHomeComponent } from './new-pei-home/new-pei-home.component';
+import { PEIComponent } from './pei/pei.component';
 import { ProgramdataComponent } from './programdata/programdata.component';
 import { ProgrammeDetailReportComponent } from './programme-detail-report/programme-detail-report.component';
 import { ProgrammeRepeatComponent } from './programme-repeat/programme-repeat.component';
@@ -98,6 +99,8 @@ const routes: Routes = [
   {path:'customizedata',component:CustomizedataComponent},
   {path:'feedata',component:FeedataComponent},
   {path:'dashboard',component:DashboardComponent},
+  {path:'pei',component:PEIComponent},
+ 
  
  
 
