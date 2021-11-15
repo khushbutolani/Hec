@@ -132,7 +132,7 @@ body{
     width: 250px;
    height: 130px;
     transition: 0.3s;
-    background-color: #0F436D;
+  
     color: #CE9C3C;
   bottom: 39px;
   display: inline-block;
@@ -146,6 +146,7 @@ body{
 
 
   }
+ 
 
 
   .active{
@@ -154,5 +155,6 @@ body{
   }
   .example-card:hover {
     transform: translate(0, -100px);
+    background-color: #0F436D;
   }
  
