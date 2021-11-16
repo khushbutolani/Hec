@@ -94,9 +94,14 @@ button{
   img{
     top: 215px;
     left: 0px;
-    width: 1800px;
+    width: 113%;
     height: 735px;
     background:  0% 0% no-repeat padding-box;
     margin: -100px 0 0 -200px;
     z-index: -1;
+  
+  }
+  body{
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
