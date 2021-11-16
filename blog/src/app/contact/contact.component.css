@@ -9,10 +9,7 @@
     height: 80px;
     
 }
-span{
-    padding-right: 1rem;
-    color: navy;
-}
+
 .example-button-row {
     display: table-cell;
     width: 490px;
@@ -46,10 +43,7 @@ span{
    
    
   }
-  .form{
-     margin-left: 70px;
-
-  }
+ 
   .example-margin {
     margin: 0 10px;
   }
@@ -58,7 +52,125 @@ span{
     color: blue;
 }
 
+.rect{
+   
+  position: absolute;
+  display: inline-block;
+  top: 235px;
+  left: 0px;
+  width: 1800px;
+  height: 635px;
+  background: transparent 0% 0% no-repeat padding-box;
+  margin: -100px 0 0 -200px;
+  opacity: 0.45;
+  background-color: black;
 
+}
+.container {
+  position: absolute;
+  top: 180px;
+   margin-left: 200px;
+  width: 1800px;
+  height: 520px;
+  background:linear-gradient(to right, #0D426C 40%, white 40%);
+  border-radius: 15px;
+  opacity: 1; 
+  padding: 30px;
+ 
+
+}
+
+img{
+top: 215px;
+left: 0px;
+width: 1800px;
+height: 735px;
+background:  0% 0% no-repeat padding-box;
+margin: -100px 0 0 -200px;
+z-index: -1;
+}
+.head{
+  position: absolute;
+  font:normal normal bold 42px/44px Open Sans;
+  color: white;
+  top: 100px;
+  margin-left: 100px;
+
+}
+
+.line{
+  border-bottom: 1px solid lightgrey;
+  margin-top: 150px;
+ margin-left: 90px;
+ margin-right: 700px;
+}
+.icon{
+   color: white;
+   position: absolute;
+   margin-left: 90px;
+   margin-top: 30px;
+
+
+
+}
+.number{
+  color: white;
+  margin-top: 45px;
+  margin-left: 130px;
+}
+.form{
+margin-left: 500px;
+display: inline-block;
+position: absolute;
+top:100px;
+width: 300px;
+
+
+}
+.form2{
+  margin-left: 500px;
+  display: inline-block;
+  position: absolute;
+  top:100px;
+  margin-top: 100px;
+  width: 500px;
+  
+  
+  }
+
+  .form3{
+    margin-left: 500px;
+    display: inline-block;
+    position: absolute;
+    top:100px;
+    margin-top: 200px;
+    width: 500px;
+    
+    
+    }
+
+   .info{
+      margin-left: 500px;
+      margin-top: 18px;
+      color: #0D426C;
+     
+      
+
+
+    }
+    .send{
+      margin-left: 340px;
+      position: absolute;
+     
+      background-color : #0D426C;
+      color: #CF9D3B;
+      padding: 9px;
+      font-size: 18px;
+      
+     
+      
+
+    }
 
 
 /*

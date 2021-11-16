@@ -25,6 +25,8 @@ import {NgxPaginationModule} from 'ngx-pagination';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+
 
 
 
@@ -56,7 +58,8 @@ const MaterialComponent = [
  NgxPaginationModule,
  MatProgressSpinnerModule,
  Ng2SearchPipeModule,
- MatMenuModule
+ MatMenuModule,
+ MatButtonToggleModule
 
  
   

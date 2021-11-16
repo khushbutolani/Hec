@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { throwMatDuplicatedDrawerError } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-faq',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FaqComponent implements OnInit {
   panelOpenState = false;
+  
   constructor() { }
 
   ngOnInit(): void {

@@ -1,5 +1,4 @@
-
-      <!--
+<!--
     <div class="example-button-row">
       <button mat-raised-button color="">Home</button>
       <button mat-raised-button color="primary">DashBoard</button>
@@ -46,7 +45,15 @@
         <button mat-raised-button color="warn">Logout</button>
         </div>
     </mat-drawer>-->
-    <app-navbar2></app-navbar2>
+
+<body>
+
+
+  <app-navbar2></app-navbar2>
+  <img src="./assets/images/university2.jpg" alt="">
+
+  <div class="rect"></div>
+  <!--
  <mat-card class="example-card">
    
     <mat-card-header>
@@ -66,18 +73,18 @@
           </mat-form-field>
           <mat-form-field appearance="fill" style="padding-top: 5px;">
             <mat-label>Enter your Email</mat-label>
-            <input matInput placeholder="pat@example.com"  required>
-            
-           <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>-->
-          </mat-form-field>
+            <input matInput placeholder="pat@example.com"  required>-->
+
+  <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>-->
+  <!-- </mat-form-field>
           <mat-form-field appearance="fill" style="padding-top: 5px;">
             <mat-label>Enter your message</mat-label>
            
-            <textarea matInput></textarea>
-           <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>-->
+            <textarea matInput></textarea>-->
+  <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
           </mat-form-field>
-    
-  
+        -->
+  <!--
     </mat-card-content>
     <mat-card-actions class="form" style="padding-top: 10px;"> 
        
@@ -89,17 +96,46 @@
     </mat-card-actions>
   </mat-card>
 
-  
-  
-    
-  
+-->
+  <div class="container">
+    <span>
+      <p class="head">Contact Us</p>
+      <p class="line"></p>
+      <mat-icon class="icon">phone</mat-icon>
+      <p class="number">+20 4678800, +20 4678800</p>
+
+      <mat-icon class="icon">mail</mat-icon>
+      <p class="number">contact@tec.mu</p>
+
+      <mat-icon class="icon">language</mat-icon>
+      <p class="number">www.hec.mu</p>
+
+    </span>
 
 
+    <mat-form-field appearance="fill" style="padding-top: 5px;" class="form">
+      <mat-label>Enter your Name</mat-label>
+      <input matInput required>
+    </mat-form-field>
 
-   
+    <mat-form-field appearance="fill" style="padding-top: 5px;" class="form2">
+      <mat-label>Enter your Email</mat-label>
+      <input matInput placeholder="pat@example.com" required>
 
-  
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" style="padding-top: 5px;" class="form3">
+      <mat-label>Write Your Message Here</mat-label>
+      <input matInput placeholder="Write Your Message Here" required>
+
+    </mat-form-field>
+    <mat-icon class="info">info</mat-icon>
+
+    <button mat-raised-button color="primary" class="send">
+      Send message
+    </button>
 
 
- 
-  
+  </div>
+
+</body>

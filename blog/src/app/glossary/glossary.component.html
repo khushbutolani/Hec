@@ -1,5 +1,4 @@
-
-      <!--
+<!--
     <div class="example-button-row">
       <button mat-raised-button color="">Home</button>
       <button mat-raised-button color="primary">DashBoard</button>
@@ -49,27 +48,29 @@
     </mat-drawer>
    
       
-  
+
 -->
 <app-navbar2></app-navbar2>
 
+<body>
+  <img src="./assets/images/university2.jpg" alt="">
+
+  <div class="rect"></div>
+
+    <!--
+<table mat-table [dataSource]="dataSource" class="container" >
+
+   
+  
  
-
-<table mat-table [dataSource]="dataSource" >
-
-    <!--- Note that these columns can be defined in any order.
-          The actual rendered columns are set as a property on the row definition" -->
-  
-    <!-- Position Column -->
     <ng-container matColumnDef="glossary" >
-      <th mat-header-cell *matHeaderCellDef> Glossary </th>
-      <td mat-cell *matCellDef="let element"> {{element.glossary}} </td>
+      <th mat-header-cell *matHeaderCellDef style="color:#0D426C; font: normal normal 600 22px/54px Open Sans;;"> Glossary </th>
+      <td mat-cell *matCellDef="let element" style="color:#0D426C; font: normal normal 600 22px/54px Open Sans;"> {{element.glossary}} </td>
     </ng-container>
-  
-    <!-- Name Column -->
+ 
     <ng-container matColumnDef="explanation">
-      <th mat-header-cell *matHeaderCellDef> Name </th>
-      <td mat-cell *matCellDef="let element"> {{element.explanation}} </td>
+      <th mat-header-cell *matHeaderCellDef style="color:#0D426C; font: normal normal 600 22px/54px Open Sans;"> Name </th>
+      <td mat-cell *matCellDef="let element" style="color:#0D426C; font: normal normal 600 22px/54px Open Sans;"> {{element.explanation}} </td>
     </ng-container>
   
    
@@ -77,8 +78,49 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
-  
-  
-    
-  
+-->
 
+
+    <div class="container">
+      <h2 style="font-size: 30px; padding-top: 20px; color: #0D426C;">Glossary</h2>
+      <p style="font-size: 15px; color: #0D426C; padding-bottom: 20px;">Glossary and it's Brief.</p>
+      <table class="table table-bordered" style="padding:50px; color:#0D426C ;">
+        <thead>
+          <tr>
+            <th>Glossary</th>
+            <th>Explanation</th>
+
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td>Basic Check</td>
+            <td>Check such as on NID validity</td>
+
+          </tr>
+          <tr>
+            <td>Claims</td>
+            <td>Request of fund or request of fees from te PEIs to HEC for FTES</td>
+
+          </tr>
+          <tr>
+            <td>FTEMIS</td>
+            <td>The Proposed system</td>
+
+          </tr>
+          <tr>
+            <td>FTES Portal</td>
+            <td>The Proposed system</td>
+
+          </tr>
+          <tr>
+            <td>Invalid Case</td>
+            <td>Student does not meet the requirement follow the basic check</td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <body>

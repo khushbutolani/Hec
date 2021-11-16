@@ -1,8 +1,4 @@
-:host {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+
  /* .navbar{
     justify-content: space-between;
     background-color:lightgray;
@@ -43,13 +39,13 @@ span{
  
   }*/
   
+  
   .example-margin {
     margin: 0 10px;
   }
-  h1{
 
-    color: blue;
-}
+
+
 
 
 
@@ -64,12 +60,43 @@ button{
 */
 
   
-  .example-sidenav {
-    padding: 20px;
+
+
+
+.rect{
    
+      position: absolute;
+      display: inline-block;
+      top: 235px;
+      left: 0px;
+      width: 1800px;
+      height: 635px;
+      background: transparent 0% 0% no-repeat padding-box;
+      margin: -100px 0 0 -200px;
+      opacity: 0.45;
+      background-color: black;
+
+  }
+  .container {
+      position: absolute;
+      top: 180px;
+       margin-left: 200px;
+      width: 1800px;
+      height: 520px;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border-radius: 15px;
+      opacity: 1; 
+      padding: 30px;
+     
+  
   }
   
-table{
-    margin-top: 50px;
-    width: 100%;
-}
+  img{
+    top: 215px;
+    left: 0px;
+    width: 1800px;
+    height: 735px;
+    background:  0% 0% no-repeat padding-box;
+    margin: -100px 0 0 -200px;
+    z-index: -1;
+  }
