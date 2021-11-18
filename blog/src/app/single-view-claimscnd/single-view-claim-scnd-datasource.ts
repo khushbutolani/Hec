@@ -27,7 +27,7 @@ const EXAMPLE_DATA: SingleViewClaimScndItem[] = [
   {CurrentYearOfStudy:"2021", CurrentSemesterOfStudy: "3", ModuleCode:"111", Ft:"1", TutionFeesClaimForPayment:"1000", AdminFeeClaimForPayment:"1000", StudentStatus:"active",Remarks:"good",fundOfTutionFeesByPei:"1000",Refund:"10"},
   {CurrentYearOfStudy:"2021", CurrentSemesterOfStudy: "3", ModuleCode:"111", Ft:"1", TutionFeesClaimForPayment:"1000", AdminFeeClaimForPayment:"1000", StudentStatus:"active",Remarks:"good",fundOfTutionFeesByPei:"1000",Refund:"10"},
   {CurrentYearOfStudy:"2021", CurrentSemesterOfStudy: "3", ModuleCode:"111", Ft:"1", TutionFeesClaimForPayment:"1000", AdminFeeClaimForPayment:"1000", StudentStatus:"active",Remarks:"good",fundOfTutionFeesByPei:"1000",Refund:"10"},
-  {CurrentYearOfStudy:"2021", CurrentSemesterOfStudy: "3", ModuleCode:"111", Ft:"1", TutionFeesClaimForPayment:"1000", AdminFeeClaimForPayment:"1000", StudentStatus:"active",Remarks:"good",fundOfTutionFeesByPei:"1000",Refund:"10"},
+  {CurrentYearOfStudy:"2020", CurrentSemesterOfStudy: "3", ModuleCode:"111", Ft:"1", TutionFeesClaimForPayment:"1000", AdminFeeClaimForPayment:"1000", StudentStatus:"active",Remarks:"good",fundOfTutionFeesByPei:"1000",Refund:"10"},
  
 
   
@@ -42,6 +42,7 @@ export class SingleViewClaimScndDataSource extends DataSource<SingleViewClaimScn
   data: SingleViewClaimScndItem[] = EXAMPLE_DATA;
   paginator: MatPaginator | undefined;
   sort: MatSort | undefined;
+  filter: string | undefined;
 
   constructor() {
     super();
@@ -83,7 +84,7 @@ export class SingleViewClaimScndDataSource extends DataSource<SingleViewClaimScn
       return data;
     }
   }
-
+  
   /**
    * Sort the data (client-side). If you're using server-side sorting,
    * this would be replaced by requesting the appropriate data from the server.

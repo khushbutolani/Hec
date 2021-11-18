@@ -11,3 +11,7 @@ h2{
   margin: 20px;
   color: #1A3854;
 }
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}

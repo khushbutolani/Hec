@@ -1,5 +1,4 @@
-
-
+<!--
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <mat-toolbar color="primary" class="navbar" style="width: 100%;">
     <div class="content login" style="padding-bottom: 0cm;">
@@ -26,17 +25,58 @@
             <button mat-menu-item>Notification</button>
             <button mat-menu-item>LogOut</button>
           </mat-menu>
-          </div>
-  
-    
-     <!--
+          </div>-->
+
+
+<!--
       <div class="example-sidenav-content" >
         <button mat-mini-fab color="primary"  class="example-icon"  aria-label="Example icon-button with menu icon" (click)="drawer.toggle()" >
             <mat-icon>menu</mat-icon>
           </button>
           </div>
-        -->
+       
       </mat-toolbar>
      
-        
+    -->
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <a class="navbar-brand" href="#"> <img src="./assets/images/hec.svg" alt="" width="170" height="65" style="margin:40px; " class="img-fluid"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true} style="color:#CE9C3C ;">Home </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/aboutus']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true} style="color:#CE9C3C ;">About US </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/help']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true} style="color:#CE9C3C ;">Online Help Facility</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/faq']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true} style="color:#CE9C3C ;">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/glossary']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true} style="color:#CE9C3C ;">Glossary</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true} style="color:#CE9C3C ;">Contact</a>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle " style="border-radius: 12px" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #0D426C; color: #CF9D3B;">
+                        <mat-icon style="color: #CF9D3B;">person</mat-icon>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">LogOut</a>
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>

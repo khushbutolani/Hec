@@ -52,6 +52,7 @@ export class StudentDetailDataSource extends DataSource<StudentDetailItem> {
   data: StudentDetailItem[] = EXAMPLE_DATA;
   paginator: MatPaginator | undefined;
   sort: MatSort | undefined;
+ 
 
   constructor() {
     super();

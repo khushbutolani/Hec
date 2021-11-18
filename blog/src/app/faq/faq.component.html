@@ -1,13 +1,15 @@
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  </head>
-  <body>
+</head>
 
-<app-navbar2></app-navbar2>
-<!--
+<body>
+
+    <app-navbar2></app-navbar2>
+    <!--
 <h1>FAQ
 </h1>
 <p class="line"></p>
@@ -36,59 +38,79 @@ What is the Role HEC?
 </mat-accordion>
 
 -->
-<img src="./assets/images/university3.png" alt="" style="top: 215px;
+    <img src="./assets/images/university3.png" alt="" class="img-fluid" style="top: 215px;
 
-width: 113%;
+width: 100%;
 height: 420px;
 background:  0% 0% no-repeat padding-box;
-margin: -100px 0 0 -200px;
+margin: -100px 0 0 0px;
 z-index: -1;
+
+overflow-y: hidden;
 ">
 
-<div class="rect"></div>
-<h3
-  style="display: inline-block; position: absolute; top:150px;left: 0px; margin-top: 150px; padding-left: 80px; font-size: 30px; color: white;">
-  FAQ</h3>
-  <div class="faq">
-<p class="faqtext"> 1) What is HEC ?</p>
-<p class="faqtext2">HEC is Higher Education Commission</p>
-<p class="help">Is it Helpful ?</p>
-<div class="example-button-row">
+    <div class="rect"></div>
+    <h3 style="display: inline-block; position: absolute; top:150px;left: 0px; margin-top: 150px; padding-left: 80px; font-size: 30px; color: white;">
+        FAQ</h3>
+    <div class="faq">
+        <p class="faqtext"> 1) What is HEC ?</p>
+        <p class="faqtext2">HEC is Higher Education Commission</p>
+        <p class="help">Is it Helpful ?</p>
+        <div class="example-button-row">
 
-     <div class="mat-button-toggle-group">
-        <button mat-mini-fab   color="primary" disabled class="help2" aria-label="Example icon button with a menu icon" >
-            <mat-icon style="color: #CF9D3B; "   >thumb_up</mat-icon>
+            <!--  <div class="example-button-container">
+               <button mat-mini-fab color="primary" class="help2">
+            <mat-icon >thumb_up</mat-icon>
         </button>
-      </div>
- 
-  
-    <div class="example-button-container" >
-      <button mat-mini-fab  class="help3"  aria-label="Example icon button with a menu icon" >
-          <mat-icon style="color: #CF9D3B;" >thumb_down</mat-icon>
-      </button>
-    </div>
-    <hr style="background-color: #0D426C; margin: 30px;">
+            </div>-->
+            <mat-button-toggle-group name="favoriteColor" style="margin-left: 1450px; position: absolute; top: 51px;">
+                <mat-button-toggle>
+                    <mat-icon style="color: #CE9C3C;">thumb_up</mat-icon>
+                </mat-button-toggle>
+                <mat-button-toggle>
+                    <mat-icon style="color: #CE9C3C;">thumb_down</mat-icon>
+                </mat-button-toggle>
 
-    <p class="faqtext"> 2) What is the role for HEC ?</p>
-<p class="faqtext2">To provide funds to PEI</p>
-<p style="position: absolute; left:1300px ; top:190px; text-align: left;
+            </mat-button-toggle-group>
+
+            <!--   <div class="example-button-container">
+                <button mat-mini-fab disabled class="help3" aria-label="Example icon button with a menu icon">
+          <mat-icon >thumb_down</mat-icon>
+      </button>
+            </div>
+            <hr style="background-color: #0D426C; margin: 30px;">-->
+
+            <p class="faqtext"> 2) What is the role for HEC ?</p>
+            <p class="faqtext2">To provide funds to PEI</p>
+            <p style="position: absolute; left:1300px ; top:190px; text-align: left;
 font: normal normal normal 20px/29px Open Sans; color: #0D426C;">Is it Helpful ?</p>
-<div class="example-button-row">
-    <div class="example-flex-container">
-      <div class="example-button-container">
-        <button mat-mini-fab color="primary" style="position: absolute; left:1430px; top: 190px;background-color: #0D426C;" >
+            <div class="example-button-row">
+                <!--  <div class="example-flex-container">
+                    <div class="example-button-container">
+                        <button mat-mini-fab color="primary" style="position: absolute; left:1430px; top: 190px;background-color: #0D426C;">
             <mat-icon style="color: #CF9D3B;" >thumb_up</mat-icon>
         </button>
-      </div>
-  </div>
-  
-    <div class="example-button-container">
-      <button mat-mini-fab    style="position: absolute; left:1480px; top: 190px;background-color: #0D426C;">
+                    </div>
+                </div>
+
+                <div class="example-button-container">
+                    <button mat-mini-fab style="position: absolute; left:1480px; top: 190px;background-color: #0D426C;">
           <mat-icon style="color: #CF9D3B;" >thumb_down</mat-icon>
       </button>
-    </div>
-</div>
-</div>
-</div></body></html>
+                </div>-->
+                <mat-button-toggle-group name="favoriteColor" style="margin-left: 1450px; position: absolute; top: 178px;">
+                    <mat-button-toggle>
+                        <mat-icon style="color: #0D426C;">thumb_up</mat-icon>
+                    </mat-button-toggle>
+                    <mat-button-toggle>
+                        <mat-icon style="color: #0D426C;">thumb_down</mat-icon>
+                    </mat-button-toggle>
 
- 
+                </mat-button-toggle-group>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

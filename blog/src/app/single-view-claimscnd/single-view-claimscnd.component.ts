@@ -15,8 +15,7 @@ export class SingleViewClaimscndComponent implements AfterViewInit {
   @ViewChild(MatTable) table!: MatTable<SingleViewClaimScndItem>;
   dataSource: SingleViewClaimScndDataSource;
   displayedColumns = ['CurrentYearOfStudy', 'CurrentSemesterOfStudy', 'ModuleCode', 'Ft', 'TutionFeesClaimForPayment', 'AdminFeeClaimForPayment', 'StudentStatus', 'Remarks','fundOfTutionFeesByPei','Refund'];
-
- 
+  
   constructor() {
     this.dataSource = new SingleViewClaimScndDataSource();
   }
@@ -26,5 +25,7 @@ export class SingleViewClaimscndComponent implements AfterViewInit {
     this.dataSource.paginator = this.paginator;
     this.table.dataSource = this.dataSource;
   }
+  
+ 
 }
 

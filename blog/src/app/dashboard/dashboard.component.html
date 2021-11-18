@@ -1,5 +1,4 @@
-
-      <!--
+<!--
     <div class="example-button-row">
       <button mat-raised-button color="">Home</button>
       <button mat-raised-button color="primary">DashBoard</button>
@@ -11,14 +10,15 @@
   <app-navbar></app-navbar>
      
 -->
+
 <body>
 
     <app-navbar2></app-navbar2>
-       
-          
-      
-   
-  <!--<mat-drawer-container class="example-container" autosize>
+
+
+
+
+    <!--<mat-drawer-container class="example-container" autosize>
      
      
       <mat-drawer #drawer class="example-sidenav" mode="side" style="width: 300px;">
@@ -42,52 +42,60 @@
                 Toggle sidenav
               </button>
     -->
-       <mat-drawer-container class="example-container" autosize style="overflow-y: hidden;">
+    <mat-drawer-container class="example-container" autosize style="overflow-y: hidden;">
         <div class="example-sidenav-content">
 
-        
-       
-     
-            <img src="./assets/images/university3.png" alt="" width="100%" height="600px"  >
+
+
+
+            <img src="./assets/images/university3.png" alt="" width="100%" height="560px">
             <mat-icon class="arrow" (click)="drawer.toggle()">arrow_forward_ios</mat-icon>
-           
-           </div>
-        <mat-drawer #drawer class="example-sidenav" mode="side" >
+
+        </div>
+        <mat-drawer #drawer class="example-sidenav" mode="side">
             <div class="example-button-col">
-                <button mat-button class="button" [routerLink]="['/pei']"  routerLinkActive="pei" [routerLinkActiveOptions]={exact:true}>Public Education Institute</button>
+                <button mat-button class="button" [routerLink]="['/pei']" routerLinkActive="pei" [routerLinkActiveOptions]={exact:true}>Public Education Institute</button>
                 <p class="lineside"></p>
                 <button mat-button class="button">Admin</button>
                 <p class="lineside"></p>
                 <button mat-button class="button">Higher Education Commission</button>
                 <p class="lineside"></p>
-        </div>
+            </div>
         </mat-drawer>
-        
+
         <mat-card class="example-card">
-        
-          <a href="/inputclaim">    <mat-card-subtitle style="text-align:center; color: #CE9C3C; font-size: 16px;" >Upload New Claim</mat-card-subtitle></a>
-           
-          </mat-card>
-          <mat-card class="example-card">
-        
-           <a href="/uploadclaim"> <mat-card-subtitle style="text-align:center; color: #CE9C3C; font-size: 16px;" >Uploaded Claim</mat-card-subtitle></a>
-           
-          </mat-card>
-          <mat-card class="example-card">
-        
-            <a href="/viewclaimpei">     <mat-card-subtitle style="text-align:center; color: #CE9C3C; font-size: 16px;" >View Claim</mat-card-subtitle></a>
-           
-          </mat-card>
-          <mat-card class="example-card">
-        
-            <a href="/studentdetail">   <mat-card-subtitle style="text-align:center; color: #CE9C3C; font-size: 16px;" >View Student Details</mat-card-subtitle></a>
-           
-          </mat-card>
-      
-      
-      </mat-drawer-container>
-     
-  <!--
+
+            <a href="/inputclaim">
+                <mat-card-subtitle style="text-align:center; color: #CE9C3C; font-size: 16px;">Upload New Claim</mat-card-subtitle>
+            </a>
+
+        </mat-card>
+        <mat-card class="example-card">
+
+            <a href="/uploadclaim">
+                <mat-card-subtitle style="text-align:center; color: #CE9C3C; font-size: 16px;">Uploaded Claim</mat-card-subtitle>
+            </a>
+
+        </mat-card>
+        <mat-card class="example-card">
+
+            <a href="/viewclaimpei">
+                <mat-card-subtitle style="text-align:center; color: #CE9C3C; font-size: 16px;">View Claim</mat-card-subtitle>
+            </a>
+
+        </mat-card>
+        <mat-card class="example-card">
+
+            <a href="/studentdetail">
+                <mat-card-subtitle style="text-align:center; color: #CE9C3C; font-size: 16px;">View Student Details</mat-card-subtitle>
+            </a>
+
+        </mat-card>
+
+
+    </mat-drawer-container>
+
+    <!--
       <div class="content" style="padding-top: 1cm; color: #000;">
        
         <div class="container"> 
@@ -103,8 +111,4 @@
         </div>
              
              </div>-->
-             </body>
-            
-  
-   
-    
+</body>
