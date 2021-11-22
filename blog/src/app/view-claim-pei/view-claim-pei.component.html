@@ -1,33 +1,33 @@
-<app-navbar2></app-navbar2>
+<!--<app-navbar2></app-navbar2>
 <h2>View Claims</h2>
 
 <div class="mat-elevation-z8">
   <table mat-table class="full-width-table" matSort aria-label="Elements">
-    <!-- Id Column -->
+ 
     <ng-container matColumnDef="FileNumber">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>File Number</th>
       <td mat-cell *matCellDef="let row">{{row.FileNumber}}</td>
     </ng-container>
 
-    <!-- Student Id Column -->
+   
     <ng-container matColumnDef="DateUploaded">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Date Uploaded</th>
       <td mat-cell *matCellDef="let row">{{row.DateUploaded}}</td>
     </ng-container>
 
-    <!-- NIC Column -->
+  
     <ng-container matColumnDef="NumberofStudentsEligible">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Number Of Students Eligible</th>
       <td mat-cell *matCellDef="let row">{{row.NumberofStudentsEligible}}</td>
     </ng-container>
 
-    <!-- Surname Column -->
+
     <ng-container matColumnDef="NumberofStudentsNotEligible">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Number Of Students Not Eligible</th>
       <td mat-cell *matCellDef="let row">{{row.NumberofStudentsNotEligible}}</td>
     </ng-container>
 
-    <!-- Maiden Name (if applicable) Column -->
+   
     <ng-container matColumnDef="Status">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Status</th>
       <td mat-cell *matCellDef="let row">{{row.Status}}  <button mat-raised-button color="primary" [routerLink]="['/singleviewfst']" style="margin-left: 30px;">View</button></td>
@@ -50,3 +50,45 @@
       aria-label="Select page">
   </mat-paginator>
 </div>
+-->
+<app-navbar2></app-navbar2>
+<html>
+
+<head>
+    <title>View Claim</title>
+</head>
+
+<body>
+    <h2>View All Claims</h2>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">File Number</th>
+                <th scope="col">Date Uploaded</th>
+                <th scope="col">Number Of Students Eligible</th>
+                <th scope="col">Number of Students Not Eligible</th>
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>Otto</td>
+                <td><button type="button" class="btn btn1">View</button>
+                </td>
+
+            </tr>
+
+        </tbody>
+    </table>
+
+    <button type="button" class="btn pre active">Previous</button>
+    <button type="button" class="btn next">Next</button>
+</body>
+
+</html>

@@ -62,6 +62,7 @@ import { PEIComponent } from './pei/pei.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -116,6 +117,7 @@ import { PEIComponent } from './pei/pei.component';
        DashboardComponent,
        Navbar2Component,
        PEIComponent,
+      
      
    
   

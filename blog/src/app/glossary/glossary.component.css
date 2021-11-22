@@ -1,5 +1,4 @@
-
- /* .navbar{
+/* .navbar{
     justify-content: space-between;
     background-color:lightgray;
     height: 80px;
@@ -38,16 +37,10 @@ span{
    
  
   }*/
-  
-  
-  .example-margin {
+
+.example-margin {
     margin: 0 10px;
-  }
-
-
-
-
-
+}
 
 
 /*
@@ -59,49 +52,43 @@ button{
 }
 */
 
-  
+.rect {
+    position: absolute;
+    display: inline-block;
+    top: 235px;
+    left: 0px;
+    width: 1800px;
+    height: 675px;
+    background: transparent 0% 0% no-repeat padding-box;
+    margin: -100px 0 0 -200px;
+    opacity: 0.45;
+    background-color: black;
+    display: flex;
+}
 
+.container {
+    position: absolute;
+    top: 180px;
+    margin-left: 200px;
+    width: 1800px;
+    height: 520px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    opacity: 1;
+    padding: 30px;
+}
 
-
-.rect{
-   
-      position: absolute;
-      display: inline-block;
-      top: 235px;
-      left: 0px;
-      width: 1800px;
-      height: 635px;
-      background: transparent 0% 0% no-repeat padding-box;
-      margin: -100px 0 0 -200px;
-      opacity: 0.45;
-      background-color: black;
-
-  }
-  .container {
-      position: absolute;
-      top: 180px;
-       margin-left: 200px;
-      width: 1800px;
-      height: 520px;
-      background: #FFFFFF 0% 0% no-repeat padding-box;
-      border-radius: 15px;
-      opacity: 1; 
-      padding: 30px;
-     
-  
-  }
-  
-  img{
+img {
     top: 215px;
     left: 0px;
     width: 113%;
     height: 735px;
-    background:  0% 0% no-repeat padding-box;
-    margin: -100px 0 0 -200px;
+    background: 0% 0% no-repeat padding-box;
+    margin: -100px 0 0 -10px;
     z-index: -1;
-  
-  }
-  body{
+}
+
+body {
     overflow-x: hidden;
     overflow-y: hidden;
-  }
+}

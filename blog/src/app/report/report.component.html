@@ -1,6 +1,7 @@
 <app-navbar2>
-      
+
 </app-navbar2>
+<!--
 <mat-drawer-container class="example-container">
     <mat-drawer mode="side" opened style="width: 500px;">
         <div class="example-button-col">
@@ -25,4 +26,48 @@
 Click to View Report
 
     </mat-drawer-content>
-  </mat-drawer-container>
+  </mat-drawer-container>-->
+<html>
+
+<head>
+    <title>reporting</title>
+</head>
+
+<body>
+    <div class="d-md-flex h-md-100 align-items-center">
+
+        <!-- First Half -->
+        <div class="col-md-4 p-0 bg-indigo h-md-100 back">
+            <div class="text-white d-md-flex  h-100 p-5 back2 ">
+                <div class=" pt-5 pb-5">
+                    <h2 class="head">Reporting</h2>
+                    <button type="button" class="btn btn-link" [routerLink]="['/reportingexception']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>1. Exception List For System Administrator</button>
+                    <button type="button" class="btn btn-link" [routerLink]="['/Dispensaryreport']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>2. Discrepancy on claims uploaded by PEIs</button>
+                    <button type="button" class="btn btn-link" [routerLink]="['/forecastreport']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>3. Forecast report on fund to be paid</button>
+                    <button type="button" class="btn btn-link" [routerLink]="['/adhocreport']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>4. Ad-hoc Report</button>
+                    <button type="button" class="btn btn-link" [routerLink]="['/feereleasereport']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>5. Report on Release of Fees</button>
+                    <button type="button" class="btn btn-link" [routerLink]="['/dropout']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>6. Report on Drop out/Interruption of Student</button>
+                    <button type="button" class="btn btn-link" [routerLink]="['/programreport']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>7. Report on Programme Details</button>
+                    <button type="button" class="btn btn-link" [routerLink]="['/historyreport']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>8. Report on History of Student</button>
+                    <button type="button" class="btn btn-link" [routerLink]="['/examinationreport']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>9. Report on Examination of Clients</button>
+                    <button type="button" class="btn btn-link" [routerLink]="['/govt']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>10. Report on Funds received from Ministry/Government</button>
+                    <button type="button" class="btn btn-link" [routerLink]="['/repeat']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>11. Report on Repeat of Programme</button>
+                    <button type="button" class="btn btn-link" [routerLink]="['/fund']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>12. Report on Funds released to PEIs</button>
+                    <button type="button" class="btn btn-link" [routerLink]="['/customize']" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>13. Customized Report of Claim</button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Half -->
+        <div class="col-md-4 p-0 bg-white h-md-100">
+            <div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center area">
+                <a href="" class="link">Click to View Report</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

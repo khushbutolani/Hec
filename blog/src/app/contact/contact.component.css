@@ -1,176 +1,115 @@
-:host {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .navbar{
-    justify-content: space-between;
-    background-color:lightgray;
-    height: 80px;
-    
+.rect {
+    margin-top: -38%;
+    width: 100%;
+    height: 82%;
+    opacity: 0.45;
+    background-color: black;
+    z-index: 1;
 }
 
-.example-button-row {
-    display: table-cell;
-    width: 490px;
-  }
-
-  .example-button-col {
-    display: table-cell;
-    width: 490px;
-
-  }
-  button{
-     margin: 10px;
-  }
-  
-  .example-button-row .mat-button-base {
-    margin: 8px 8px 8px 0;
-  }
-  .example-container {
-    margin: 0px;
-    height: 500px;
-   
-   
-   
- 
-  }
-  .example-card {
-    max-width: 400px;
-    margin-left: 450px;
-    margin-top: 100px;
-   
-   
-   
-  }
- 
-  .example-margin {
-    margin: 0 10px;
-  }
-  h1{
-
-    color: blue;
-}
-
-.rect{
-   
-  position: absolute;
-  display: inline-block;
-  top: 235px;
-  left: 0px;
-  width: 1800px;
-  height: 635px;
-  background: transparent 0% 0% no-repeat padding-box;
-  margin: -100px 0 0 -200px;
-  opacity: 0.45;
-  background-color: black;
-
-}
 .container {
-  position: absolute;
-  top: 180px;
-   margin-left: 200px;
-  width: 1800px;
-  height: 520px;
-  background:linear-gradient(to right, #0D426C 40%, white 40%);
-  border-radius: 15px;
-  opacity: 1; 
-  padding: 30px;
- 
-
+    /* position: absolute;
+    top: 180px;
+    margin-left: 200px;
+    width: 1800px;
+    height: 520px;
+    background: linear-gradient(to right, #0D426C 40%, white 40%);
+    border-radius: 15px;
+    opacity: 1;
+    padding: 30px;
+    display: flexbox; */
+    position: absolute;
+    margin-top: -35%;
+    margin-left: 15%;
+    width: 113%;
+    height: 70%;
+    background: linear-gradient(to right, #0D426C 40%, white 40%);
+    border-radius: 15px;
+    opacity: 1;
+    padding: 3%;
+    z-index: 2;
 }
 
-img{
-top: 215px;
-left: 0px;
-width: 113%;
-height: 700px;
-background:  0% 0% no-repeat padding-box;
-margin: -100px 0 0 -200px;
-z-index: -1;
-}
-.head{
-  position: absolute;
-  font:normal normal bold 42px/44px Open Sans;
-  color: white;
-  top: 100px;
-  margin-left: 100px;
-
+.head {
+    position: absolute;
+    font: normal normal bold 42px/44px Open Sans;
+    color: white;
+    top: 13%;
+    margin-left: 4%;
 }
 
-.line{
-  border-bottom: 1px solid lightgrey;
-  margin-top: 150px;
- margin-left: 90px;
- margin-right: 700px;
+.line {
+    border-bottom: 1px solid lightgrey;
+    margin-top: 8%;
+    margin-left: 4%;
+    margin-right: 700px;
 }
-.icon{
-   color: white;
-   position: absolute;
-   margin-left: 90px;
-   margin-top: 30px;
 
-
-
+.icon {
+    color: white;
+    position: absolute;
+    margin-left: 2%;
+    margin-top: 3%x;
 }
-.number{
-  color: white;
-  margin-top: 45px;
-  margin-left: 130px;
+
+.number {
+    color: white;
+    margin-top: 2%;
+    margin-left: 8%;
 }
-.form{
-margin-left: 500px;
-display: inline-block;
-position: absolute;
-top:100px;
-width: 300px;
 
-
+.form {
+    margin-left: 45%;
+    /* display: inline-block; */
+    position: absolute;
+    top: 20%;
+    width: 45%;
 }
-.form2{
-  margin-left: 500px;
-  display: inline-block;
-  position: absolute;
-  top:100px;
-  margin-top: 100px;
-  width: 500px;
-  
-  
-  }
 
-  .form3{
-    margin-left: 500px;
+.form2 {
+    /* margin-left: 500px;
     display: inline-block;
     position: absolute;
-    top:100px;
-    margin-top: 200px;
+    top: 100px;
+    margin-top: 100px;
     width: 500px;
-    
-    
-    }
+ */
+    margin-left: 45%;
+    /* display: inline-block; */
+    position: absolute;
+    top: 40%;
+    width: 45%;
+}
 
-   .info{
-      margin-left: 500px;
-      margin-top: 18px;
-      color: #0D426C;
-     
-      
+.form3 {
+    /* margin-left: 500px;
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    margin-top: 200px;
+    width: 500px; */
+    margin-left: 45%;
+    /* display: inline-block; */
+    position: absolute;
+    top: 60%;
+    width: 45%;
+}
 
+.info {
+    margin-left: 500px;
+    margin-top: 14%;
+    color: #0D426C;
+}
 
-    }
-    .send{
-      margin-left: 340px;
-      position: absolute;
-     
-      background-color : #0D426C;
-      color: #CF9D3B;
-      padding: 9px;
-      font-size: 18px;
-      
-     
-      
-
-    }
+.send {
+    margin-left: 30%;
+    position: absolute;
+    background-color: #0D426C;
+    color: #CF9D3B;
+    padding: 9px;
+    font-size: 18px;
+    margin-top: 12%;
+}
 
 
 /*
@@ -182,7 +121,8 @@ button{
 }
 */
 
-  
-  .example-sidenav {
-    padding: 20px;
-  }
+img {
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+}

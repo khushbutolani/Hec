@@ -10,7 +10,7 @@
 }
 
 .rect {
-    position: absolute;
+    /* position: absolute;
     display: inline-block;
     top: 255px;
     left: 0px;
@@ -19,7 +19,16 @@
     background: transparent 0% 0% no-repeat padding-box;
     margin: -100px 0 0 -200px;
     opacity: 0.45;
+    background-color: black; */
+    position: relative;
+    top: -58%;
+    width: 99%;
+    height: 58%;
+    margin: auto;
+    opacity: 0.45;
     background-color: black;
+    left: 0;
+    right: 0;
 }
 
 .container {

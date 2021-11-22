@@ -5,7 +5,7 @@ import { MatSort } from '@angular/material/sort';
 import { MatTable, MatTableDataSource } from '@angular/material/table';
 
 import { StudentDetailDataSource, StudentDetailItem } from './student-detail-datasource';
-import * as jqueryStatic from 'jquery';
+
 @Component({
   selector: 'app-student-detail',
   templateUrl: './student-detail.component.html',

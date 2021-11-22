@@ -3,7 +3,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { map } from 'rxjs/operators';
 import { Observable, of as observableOf, merge } from 'rxjs';
-import { MatTableDataSource } from '@angular/material/table';
+
 
 // TODO: Replace this with your own data model type
 export interface StudentDetailItem {
@@ -50,7 +50,7 @@ export class StudentDetailDataSource extends DataSource<StudentDetailItem> {
   data: StudentDetailItem[] = EXAMPLE_DATA;
   paginator: MatPaginator | undefined;
   sort: MatSort | undefined;
-  filter!: string;
+ 
  
 
  

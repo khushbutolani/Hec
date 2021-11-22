@@ -1,6 +1,6 @@
-<head>
+<!--<head>
   
-  <!-- Including the  Angular JS CDN -->
+ 
   <script src=
 "http://code.angularjs.org/1.2.0/angular.min.js">
   </script>
@@ -73,4 +73,74 @@
        </mat-card-actions>
      </mat-card>
      </body>
- 
+    -->
+<app-navbar2></app-navbar2>
+<html>
+
+<head>
+    <title>Input Claim</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                PEI <input type="text" class="form-control" placeholder="PEI">
+                            </div>
+                            <div class="col">
+                                File Number<input type="text" class="form-control" placeholder="File Number">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col">
+                                Academic Year
+                                <input type="date" class="form-control" placeholder="Academic Year">
+                            </div>
+                            <div class="col">
+                                Semester
+                                <select id="inputState" class="form-control">
+                                <option selected>Semester</option>
+                                <option>...</option>
+                              </select>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                Remarks
+                                <input type="text" class="form-control " placeholder="Remarks">
+
+                            </div>
+                        </div>
+                        <div class="card-footer ">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  I, PEI User 1 certify that:
+                            </label>
+                                <ol type="i">
+                                    <li>All Students mentioned above are of Mauritian Nationality</li>
+                                    <li>This claim does not include any amount for resit fees/repeat of semester/year by any students</li>
+                                    <li>The claim is in respect of the first Certificate/Diploma/Degree of the respective students</li>
+                                    <li>The claim does not include any amount payble to a foreign university</li>
+                                    <li>The claim does not include any student already covered by other schemes for free tertiary education</li>
+                                    <li>All information in claim is true and correct</li>
+                                </ol>
+                                <button type="button" class="btn ">Next</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
