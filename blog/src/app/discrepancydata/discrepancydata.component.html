@@ -12,52 +12,51 @@
       
     </mat-toolbar> -->
     <app-navbar2></app-navbar2>
-<h2>View Discrepancy Data</h2>
+<!-- <h2>View Discrepancy Data</h2>
 <div class="mat-elevation-z8">
   <table mat-table class="full-width-table" matSort aria-label="Elements">
-    <!-- Id Column -->
+   
     <ng-container matColumnDef="FileNumber">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>FileNumber</th>
       <td mat-cell *matCellDef="let row">{{row.FileNumber}}</td>
     </ng-container>
 
-    <!-- Student Id Column -->
+   
     <ng-container matColumnDef="Pei">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Pei</th>
       <td mat-cell *matCellDef="let row">{{row.Pei}}</td>
     </ng-container>
 
-    <!-- NIC Column -->
+    
     <ng-container matColumnDef="AcademicYear">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>AcademicYear</th>
       <td mat-cell *matCellDef="let row">{{row.AcademicYear}}</td>
     </ng-container>
 
-    <!-- Surname Column -->
+    
     <ng-container matColumnDef="Semester">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Semester</th>
       <td mat-cell *matCellDef="let row">{{row.Semester}}</td>
     </ng-container>
 
-    <!-- Maiden Name (if applicable) Column -->
+    
     <ng-container matColumnDef="ProgrammeCode">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Programme Code</th>
       <td mat-cell *matCellDef="let row">{{row.ProgrammeCode}}</td>
     </ng-container>
 
-    <!-- Other Name Column -->
     <ng-container matColumnDef="StudentNIC">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Student NIC</th>
       <td mat-cell *matCellDef="let row">{{row.StudentNIC}}</td>
     </ng-container>
 
-    <!-- Academic Year And Month Of First Intake Column -->
+    
     <ng-container matColumnDef="Surname">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Surname</th>
       <td mat-cell *matCellDef="let row">{{row.Surname}}</td>
     </ng-container>
 
-    <!-- Academic Year  Column -->
+    
     <ng-container matColumnDef="OtherName">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Other Name</th>
       <td mat-cell *matCellDef="let row">{{row.OtherName}}</td>
@@ -80,4 +79,57 @@
       [pageSizeOptions]="[5, 10, 20]"
       aria-label="Select page">
   </mat-paginator>
-</div>
+</div> -->
+
+<html>
+
+<head>
+    <title>View Discrepancy Data</title>
+</head>
+
+<body>
+    <h2>View Discrepancy Data</h2>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">File Number</th>
+                <th scope="col">PEI</th>
+                <th scope="col">Academic Year</th>
+                <th scope="col">Semester</th>
+                <th scope="col">Programme Code</th>
+                <th scope="col">Student NIC</th>
+                <th scope="col">Surname</th>
+                <th scope="col">Other Name</th>
+                <th scope="col">Remark of Discrepancy</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>64</td>
+                <td>8</td>
+                <td>2020</td>
+                <td>3</td>
+                <td>678</td>
+                <td>696</td>
+                <td>john</td>
+                <td>hij</td>
+                <td>No</td>
+            </tr>
+            <tr>
+              <td>69</td>
+              <td>11</td>
+              <td>2020</td>
+              <td>2</td>
+              <td>567</td>
+              <td>656</td>
+              <td>kem</td>
+              <td>chee</td>
+              <td>No</td>
+          </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -12,34 +12,33 @@
       
     </mat-toolbar> -->
     <app-navbar2></app-navbar2>
-<h2>View Fund Data</h2>
-<div class="mat-elevation-z8">
+<!-- <div class="mat-elevation-z8">
   <table mat-table class="full-width-table" matSort aria-label="Elements">
-    <!-- Id Column -->
+  
     <ng-container matColumnDef="PEI">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>PEI</th>
       <td mat-cell *matCellDef="let row">{{row.PEI}}</td>
     </ng-container>
 
-    <!-- Student Id Column -->
+    
     <ng-container matColumnDef="NoofStudents">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>No. of Students</th>
       <td mat-cell *matCellDef="let row">{{row.NoofStudents}}</td>
     </ng-container>
 
-    <!-- NIC Column -->
+    
     <ng-container matColumnDef="ActualAmountreleasedtoPEIs">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Actual Amount released to PEIs</th>
       <td mat-cell *matCellDef="let row">{{row.ActualAmountreleasedtoPEIs}}</td>
     </ng-container>
 
-    <!-- Surname Column -->
+    
     <ng-container matColumnDef="DateofPayment">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Date of Payment</th>
       <td mat-cell *matCellDef="let row">{{row.DateofPayment}}</td>
     </ng-container>
 
-    <!-- Maiden Name (if applicable) Column -->
+ 
     <ng-container matColumnDef="CBR">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>CBR</th>
       <td mat-cell *matCellDef="let row">{{row.CBR}}</td>
@@ -58,7 +57,43 @@
       [pageSizeOptions]="[5, 10, 20]"
       aria-label="Select page">
   </mat-paginator>
-</div>
+</div> -->
+
+
+<html>
+
+<head>
+    <title>View Fund Data</title>
+</head>
+
+<body>
+    <h2>View Fund Data</h2>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">PEI</th>
+                <th scope="col">Number of Students</th>
+                <th scope="col">Actual Amount released to PEIs</th>
+                <th scope="col">Date of Payment</th>
+                <th scope="col">CBR</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>46</td>
+                <td>500</td>
+                <td>450000</td>
+                <td>23/11/2021</td>
+                <td>abc</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>
+
 
 
 

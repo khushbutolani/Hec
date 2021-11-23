@@ -1,52 +1,52 @@
 
   <app-navbar2></app-navbar2>
-  <h2>View Claim</h2>
+  <!-- <h2>View Claim</h2>
  
   <div class="mat-elevation-z8">
     <table mat-table class="full-width-table" matSort >
-      <!-- notEligibleReason Column -->
+      
       <ng-container matColumnDef="CurrentYearOfStudy">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>CurrentYearOfStudy</th>
         <td mat-cell *matCellDef="let row">{{row.CurrentYearOfStudy}}</td>
       </ng-container>
   
-      <!-- Student Id Column -->
+  
       <ng-container matColumnDef="CurrentSemesterOfStudy">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>CurrentSemesterOfStudy</th>
         <td mat-cell *matCellDef="let row">{{row.CurrentSemesterOfStudy}}</td>
       </ng-container>
   
-      <!-- NIC Column -->
+      
       <ng-container matColumnDef="ModuleCode">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>ModuleCode</th>
         <td mat-cell *matCellDef="let row">{{row.ModuleCode}}</td>
       </ng-container>
   
-      <!-- Surname Column -->
+    
       <ng-container matColumnDef="Ft">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Ft</th>
         <td mat-cell *matCellDef="let row">{{row.Ft}}</td>
       </ng-container>
   
-      <!-- Maiden Name (if applicable) Column -->
+      
       <ng-container matColumnDef="TutionFeesClaimForPayment">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>TutionFeesClaimForPayment</th>
         <td mat-cell *matCellDef="let row">{{row.TutionFeesClaimForPayment}}</td>
       </ng-container>
   
-      <!-- Other Name Column -->
+    
       <ng-container matColumnDef="AdminFeeClaimForPayment">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>AdminFeeClaimForPayment</th>
         <td mat-cell *matCellDef="let row">{{row.AdminFeeClaimForPayment}}</td>
       </ng-container>
   
-      <!-- Academic Year And Month Of First Intake Column -->
+     
       <ng-container matColumnDef="StudentStatus">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>StudentStatus</th>
         <td mat-cell *matCellDef="let row">{{row.StudentStatus}}</td>
       </ng-container>
   
-      <!-- Academic Year  Column -->
+      
       <ng-container matColumnDef="Remarks">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Remarks</th>
         <td mat-cell *matCellDef="let row">{{row.Remarks}}</td>
@@ -75,5 +75,52 @@
   </div>
   
   <button mat-raised-button color="primary" style="margin-left: 500px;" [routerLink]="['/singleviewfst']">Previous</button>
-  <button mat-raised-button color="primary" style="margin-left: 100px;" [routerLink]="['/singleviewclaim']">Next</button>
+  <button mat-raised-button color="primary" style="margin-left: 100px;" [routerLink]="['/singleviewclaim']">Next</button> -->
 
+  <html>
+
+    <head>
+        <title>Student Detail</title>
+    </head>
+    
+    <body>
+        <h2>Student Detail</h2>
+    
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Current Year Of Study</th>
+                    <th scope="col">Current Semester Of Study</th>
+                    <th scope="col">Module Code</th>
+                    <th scope="col">Ft</th>
+                    <th scope="col">Tution Fees Claim For Payment</th>
+                    <th scope="col">Admin Fee Claim For Payment</th>
+                    <th scope="col">Student Status</th>
+                    <th scope="col">Remarks</th> 
+                    <th scope="col">fund Of Tution Fees By Pei</th>
+                    <th scope="col">Refund</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2021</td>
+                    <td>3</td>
+                    <td>45</td>
+                    <td>xyz</td>
+                    <td>23000</td>
+                    <td>6000</td>
+                    <td>active</td>
+                    <td>No</td>
+                    <td>20000</td>
+                    <td>5000</td>
+    
+                </tr>
+    
+            </tbody>
+        </table>
+    
+        <button type="button" class="btn pre active">Previous</button>
+        <button type="button" class="btn next">Next</button>
+    </body>
+    
+    </html>

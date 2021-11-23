@@ -1,43 +1,43 @@
-<!--<app-navbar2></app-navbar2>
-<h2>View Claims</h2>
+<app-navbar2></app-navbar2>
 
-<div class="mat-elevation-z8">
+
+<!-- <div class="mat-elevation-z8">
   <table mat-table class="full-width-table" matSort aria-label="Elements">
- 
-    <ng-container matColumnDef="FileNumber">
+    <!-- Id Column -->
+    <!-- <ng-container matColumnDef="FileNumber">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>File Number</th>
       <td mat-cell *matCellDef="let row">{{row.FileNumber}}</td>
-    </ng-container>
+    </ng-container> -->
 
-   
+    <!-- Student Id Column
     <ng-container matColumnDef="DateUploaded">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Date Uploaded</th>
       <td mat-cell *matCellDef="let row">{{row.DateUploaded}}</td>
-    </ng-container>
-
-  
+    </ng-container> -->
+<!-- 
+    NIC Column
     <ng-container matColumnDef="NumberofStudentsEligible">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Number Of Students Eligible</th>
       <td mat-cell *matCellDef="let row">{{row.NumberofStudentsEligible}}</td>
-    </ng-container>
+    </ng-container> -->
 
-
-    <ng-container matColumnDef="NumberofStudentsNotEligible">
+    <!-- Surname Column -->
+    <!-- <ng-container matColumnDef="NumberofStudentsNotEligible">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Number Of Students Not Eligible</th>
       <td mat-cell *matCellDef="let row">{{row.NumberofStudentsNotEligible}}</td>
-    </ng-container>
+    </ng-container> -->
 
-   
-    <ng-container matColumnDef="Status">
+    <!-- Maiden Name (if applicable) Column -->
+    <!-- <ng-container matColumnDef="Status">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Status</th>
       <td mat-cell *matCellDef="let row">{{row.Status}}  <button mat-raised-button color="primary" [routerLink]="['/singleviewfst']" style="margin-left: 30px;">View</button></td>
     
-    </ng-container>
+    </ng-container> -->
 
    
    
 
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <!-- <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
@@ -48,15 +48,9 @@
       [pageSize]="10"
       [pageSizeOptions]="[5, 10, 20]"
       aria-label="Select page">
-  </mat-paginator>
-</div>
--->
-<app-navbar2></app-navbar2>
+  </mat-paginator> -->
+<!-- </div> --> 
 <html>
-
-<head>
-    <title>View Claim</title>
-</head>
 
 <body>
     <h2>View All Claims</h2>
@@ -75,10 +69,10 @@
         <tbody>
             <tr>
                 <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>Otto</td>
+                <td>20/11/2021</td>
+                <td>678</td>
+                <td>22</td>
+                <td>active</td>
                 <td><button type="button" class="btn btn1">View</button>
                 </td>
 

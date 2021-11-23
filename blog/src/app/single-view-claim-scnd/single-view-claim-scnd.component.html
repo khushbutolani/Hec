@@ -1,33 +1,33 @@
 
 <app-navbar2></app-navbar2>
-<h2>View Claim</h2>
+<!-- <h2>View Claim</h2>
 <div class="mat-elevation-z8">
   <table mat-table class="full-width-table" matSort >
-    <!-- notEligibleReason Column -->
+    
     <ng-container matColumnDef="notEligibleReason">
       <th mat-header-cell *matHeaderCellDef>Not Eligible Reason</th>
       <td mat-cell *matCellDef="let row">{{row.notEligibleReason}}</td>
     </ng-container>
 
-    <!-- uploadedBy Column -->
+    
     <ng-container matColumnDef="uploadedBy">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Uploaded By</th>
       <td mat-cell *matCellDef="let row">{{row.uploadedBy}}</td>
     </ng-container>
 
-    <!-- dateTimeUploaded Column -->
+    
     <ng-container matColumnDef="dateTimeUploaded">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Date Time Uploaded</th>
       <td mat-cell *matCellDef="let row">{{row.dateTimeUploaded}}</td>
     </ng-container>
 
-    <!-- submittedByForApproval Column -->
+    
     <ng-container matColumnDef="submittedByForApproval">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Submitted By For Approval</th>
       <td mat-cell *matCellDef="let row">{{row.submittedByForApproval}}</td>
     </ng-container>
 
-    <!-- dataTimeSubmittedForApproval Column -->
+    
     <ng-container matColumnDef="dataTimeSubmittedForApproval">
       <th mat-header-cell *matHeaderCellDef>Date Time Submitted For Approval</th>
       <td mat-cell *matCellDef="let row">{{row.dataTimeSubmittedForApproval}}</td>
@@ -46,4 +46,41 @@
   </mat-paginator>
 </div>
 
-<button mat-raised-button color="primary" style="margin-left: 500px;" [routerLink]="['/singleviewscnd']">Previous</button>
+<button mat-raised-button color="primary" style="margin-left: 500px;" [routerLink]="['/singleviewscnd']">Previous</button> -->
+
+
+<html>
+
+  <head>
+      <title>View Claim</title>
+  </head>
+  
+  <body>
+      <h2>View Claim</h2>
+  
+      <table class="table table-bordered">
+          <thead>
+              <tr>
+                  <th scope="col">Not Eligible Reason</th>
+                  <th scope="col">Uploaded By</th>
+                  <th scope="col">Date Time Uploaded</th>
+                  <th scope="col">Submitted By For Approval</th>
+                  <th scope="col">Date Time Submitted For Approval</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Repeated course</td>
+                  <td>john</td>
+                  <td>20/11/2021 12:56</td>
+                  <td>neil</td>
+                  <td>25/11/2021 15:45</td>
+              </tr>
+  
+          </tbody>
+      </table>
+  
+      <button type="button" class="btn pre active">Previous</button>
+  </body>
+  
+  </html>

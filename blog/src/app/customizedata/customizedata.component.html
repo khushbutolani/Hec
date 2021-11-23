@@ -12,52 +12,49 @@
       
     </mat-toolbar> -->
     <app-navbar2></app-navbar2>
-<h2>View Customized Data</h2>
+<!-- <h2>View Customized Data</h2>
 <div class="mat-elevation-z8">
   <table mat-table class="full-width-table" matSort aria-label="Elements">
-    <!-- Id Column -->
+   
     <ng-container matColumnDef="PEI">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>PEI</th>
       <td mat-cell *matCellDef="let row">{{row.PEI}}</td>
     </ng-container>
 
-    <!-- Student Id Column -->
     <ng-container matColumnDef="ProgrammeCodeandName">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Programme Code and Name</th>
       <td mat-cell *matCellDef="let row">{{row.ProgrammeCodeandName}}</td>
     </ng-container>
 
-    <!-- NIC Column -->
+
     <ng-container matColumnDef="ModuleCodeandName">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Module Code and Name</th>
       <td mat-cell *matCellDef="let row">{{row.ModuleCodeandName}}</td>
     </ng-container>
 
-    <!-- Surname Column -->
     <ng-container matColumnDef="ProgrammeLevel">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Programme Level</th>
       <td mat-cell *matCellDef="let row">{{row.ProgrammeLevel}}</td>
     </ng-container>
 
-    <!-- Maiden Name (if applicable) Column -->
+    
     <ng-container matColumnDef="ModeOfStudy">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Mode Of Study</th>
       <td mat-cell *matCellDef="let row">{{row.ModeOfStudy}}</td>
     </ng-container>
 
-    <!-- Other Name Column -->
     <ng-container matColumnDef="NumberofStudents">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Number of Students</th>
       <td mat-cell *matCellDef="let row">{{row.NumberofStudents}}</td>
     </ng-container>
 
-    <!-- Academic Year And Month Of First Intake Column -->
+ 
     <ng-container matColumnDef="AmountofFundReleased">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Amount of Fund Released</th>
       <td mat-cell *matCellDef="let row">{{row.AmountofFundReleased}}</td>
     </ng-container>
 
-    <!-- Academic Year  Column -->
+ 
     <ng-container matColumnDef="DateFundreleasedtoPEIs">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Date Fund released to PEIs</th>
       <td mat-cell *matCellDef="let row">{{row.DateFundreleasedtoPEIs}}</td>
@@ -76,5 +73,48 @@
       [pageSizeOptions]="[5, 10, 20]"
       aria-label="Select page">
   </mat-paginator>
-</div>
+</div> -->
+
+
+<html>
+
+<head>
+    <title>View Customized Data</title>
+</head>
+
+<body>
+    <h2>View Customized Data</h2>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">PEI</th>
+                <th scope="col">Programme Code and Name</th>
+                <th scope="col">Module Code and Name</th>
+                <th scope="col">Programme Level</th>
+                <th scope="col">Mode Of Study</th>
+                <th scope="col">Number of Students</th>
+                <th scope="col">Amount of Fund Released</th>
+                <th scope="col">Date Fund released to PEIs</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8</td>
+                <td>124cd</td>
+                <td>67mu</td>
+                <td>1</td>
+                <td>online</td>
+                <td>780000</td>
+                <td>230000</td>
+                <td>22/11/2021</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>
+
+
 

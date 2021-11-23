@@ -12,46 +12,46 @@
       
     </mat-toolbar> -->
     <app-navbar2></app-navbar2>
-<h2>View Govt Data</h2>
+<!-- <h2>View Govt Data</h2>
 <div class="mat-elevation-z8">
   <table mat-table class="full-width-table" matSort aria-label="Elements">
-    <!-- Id Column -->
+    
     <ng-container matColumnDef="DateFundRequestedByHEC">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Date Fund Requested By HEC</th>
       <td mat-cell *matCellDef="let row">{{row.DateFundRequestedByHEC}}</td>
     </ng-container>
 
-    <!-- Student Id Column -->
+   
     <ng-container matColumnDef="AmountedRequested">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Amounted Requested</th>
       <td mat-cell *matCellDef="let row">{{row.AmountedRequested}}</td>
     </ng-container>
 
-    <!-- NIC Column -->
+
     <ng-container matColumnDef="DateFundReceived">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Date Fund Received</th>
       <td mat-cell *matCellDef="let row">{{row.DateFundReceived}}</td>
     </ng-container>
 
-    <!-- Surname Column -->
+   
     <ng-container matColumnDef="AmountReceived">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Amount Received</th>
       <td mat-cell *matCellDef="let row">{{row.AmountReceived}}</td>
     </ng-container>
 
-    <!-- Maiden Name (if applicable) Column -->
+    
     <ng-container matColumnDef="ActualAmountreleasedtoPEIs">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Actual Amount released to PEIs</th>
       <td mat-cell *matCellDef="let row">{{row.ActualAmountreleasedtoPEIs}}</td>
     </ng-container>
 
-    <!-- Other Name Column -->
+
     <ng-container matColumnDef="PEI">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>PEI</th>
       <td mat-cell *matCellDef="let row">{{row.PEI}}</td>
     </ng-container>
 
-    <!-- Academic Year And Month Of First Intake Column -->
+   
     <ng-container matColumnDef="Differenecbetweenamountrequestedandreceived">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Differenec between amouny requested and received</th>
       <td mat-cell *matCellDef="let row">{{row.Differenecbetweenamountrequestedandreceived}}</td>
@@ -71,6 +71,45 @@
       [pageSizeOptions]="[5, 10, 20]"
       aria-label="Select page">
   </mat-paginator>
-</div>
+</div> -->
+
+<html>
+
+<head>
+    <title>View Govt Data</title>
+</head>
+
+<body>
+    <h2>View Govt Data</h2>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Date Fund Requested By HEC</th>
+                <th scope="col">Amounted Requested</th>
+                <th scope="col">Date Fund Received</th>
+                <th scope="col">Amount Received</th>
+                <th scope="col">Actual Amount released to PEIs</th>
+                <th scope="col">PEI</th>
+                <th scope="col">Differenec between amount requested and received</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>12/11/2021</td>
+                <td>10000</td>
+                <td>12/6/2021</td>
+                <td>10000</td>
+                <td>5000</td>
+                <td>256</td>
+                <td>5000</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>
+
 
 

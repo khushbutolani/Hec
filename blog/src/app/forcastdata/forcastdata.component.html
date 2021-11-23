@@ -12,57 +12,56 @@
       
     </mat-toolbar> -->
     <app-navbar2></app-navbar2>
-<h2>View Discrepancy Data</h2>
+<!-- <h2>View Discrepancy Data</h2>
 <div class="mat-elevation-z8">
   <table mat-table class="full-width-table" matSort aria-label="Elements">
-    <!-- Id Column -->
+    
     <ng-container matColumnDef="PEI">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>PEI</th>
       <td mat-cell *matCellDef="let row">{{row.PEI}}</td>
     </ng-container>
 
-    <!-- Student Id Column -->
+   
     <ng-container matColumnDef="FutureAcademicYear">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Future Academic Year</th>
       <td mat-cell *matCellDef="let row">{{row.FutureAcademicYear}}</td>
     </ng-container>
 
-    <!-- NIC Column -->
+    
     <ng-container matColumnDef="AcademicYear">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>AcademicYear</th>
       <td mat-cell *matCellDef="let row">{{row.AcademicYear}}</td>
     </ng-container>
 
-    <!-- Surname Column -->
+    
     <ng-container matColumnDef="FutureSemester">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Future Semester</th>
       <td mat-cell *matCellDef="let row">{{row.FutureSemester}}</td>
     </ng-container>
 
-    <!-- Maiden Name (if applicable) Column -->
+  
     <ng-container matColumnDef="PresentAcademicYear">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Present Academic Year</th>
       <td mat-cell *matCellDef="let row">{{row.PresentAcademicYear}}</td>
     </ng-container>
-      <!-- Maiden Name (if applicable) Column -->
+    
       <ng-container matColumnDef="PresentSemester">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Present Semester</th>
         <td mat-cell *matCellDef="let row">{{row.PresentSemester}}</td>
       </ng-container>
 
-    <!-- Other Name Column -->
+ 
     <ng-container matColumnDef="StudentNIC">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Student NIC</th>
       <td mat-cell *matCellDef="let row">{{row.StudentNIC}}</td>
     </ng-container>
 
-    <!-- Academic Year And Month Of First Intake Column -->
     <ng-container matColumnDef="ProgrammeCode">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Programme Code</th>
       <td mat-cell *matCellDef="let row">{{row.ProgrammeCode}}</td>
     </ng-container>
 
-    <!-- Academic Year  Column -->
+    
     <ng-container matColumnDef="AmountDisbursed">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Amount Disbursed</th>
       <td mat-cell *matCellDef="let row">{{row.AmountDisbursed}}</td>
@@ -86,5 +85,49 @@
       [pageSizeOptions]="[5, 10, 20]"
       aria-label="Select page">
   </mat-paginator>
-</div>
+</div> -->
+
+
+<html>
+
+<head>
+    <title>View Forcast Data</title>
+</head>
+
+<body>
+    <h2>View Forcast Data</h2>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">PEI</th>
+                <th scope="col">Future Academic Year</th>
+                <th scope="col">Future Semester</th>
+                <th scope="col">Present Academic Year</th>
+                <th scope="col">Present Semester</th>
+                <th scope="col">Student NIC</th>
+                <th scope="col">Programme Code</th>
+                <th scope="col">Amount Disbursed</th>
+                <th scope="col">Amount to be paid by HEC</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>34</td>
+                <td>2022</td>
+                <td>5</td>
+                <td>2021</td>
+                <td>4</td>
+                <td>56</td>
+                <td>67</td>
+                <td>25000</td>
+                <td>15000<td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>
+
 

@@ -1,9 +1,85 @@
 @import "~bootstrap/dist/css/bootstrap.css";
-.k-alt:first-child{
+.k-alt:first-child {
     background-color: lightgrey;
-    
-
 }
-mat-spinner{
+
+mat-spinner {
     margin-left: 500px;
+}
+
+body {
+    background-color: #F8FCFF;
+}
+
+.head {
+    padding: 5%;
+    color: #0D426C;
+    font-size: 42px;
+}
+
+.btn1 {
+    margin-top: -146%;
+}
+
+.btn2 {
+    margin-top: -146%;
+    margin-left: 10%;
+}
+
+.blank {
+    margin-left: 15%;
+    padding-left: 17%;
+    padding-right: 11%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 152px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px dashed #707070;
+    opacity: 1;
+}
+
+img {
+    width: 2%;
+    height: 5%;
+    margin-left: -5%;
+}
+
+.upload {
+    margin-left: -5%;
+    width: 3%;
+    height: 5%;
+}
+
+.pre {
+    margin-left: -5%;
+    margin-top: 10%;
+}
+
+.next {
+    color: #0D426C;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+.active {
+    background-color: #0D426C;
+    color: #CE9C3C;
+}
+
+.pagination {
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+.file {
+    margin-top: 10%;
+}
+
+.but {
+    margin-left: 80%;
+}
+
+.btn-reponsive {
+    white-space: normal !important;
+    word-wrap: break-word;
 }

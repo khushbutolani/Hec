@@ -1,27 +1,27 @@
 
   <app-navbar2></app-navbar2>
-  <h2>View Claim</h2>
-  <div class="mat-elevation-z8">
+  <!-- <h2>View Claim</h2> -->
+  <!-- <div class="mat-elevation-z8">
     <table mat-table class="full-width-table" matSort >
-      <!-- notEligibleReason Column -->
+      notEligibleReason Column 
       <ng-container matColumnDef="FacultyId">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Faculty/School/Cluster Id</th>
         <td mat-cell *matCellDef="let row">{{row.FacultyId}}</td>
       </ng-container>
   
-      <!-- Student Id Column -->
+      Student Id Column 
       <ng-container matColumnDef="ProgrammeCode">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Programme Code</th>
         <td mat-cell *matCellDef="let row">{{row.ProgrammeCode}}</td>
       </ng-container>
   
-      <!-- NIC Column -->
+       NIC Column 
       <ng-container matColumnDef="CurrentYearOfStudy">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Current Year Of Study</th>
         <td mat-cell *matCellDef="let row">{{row.CurrentYearOfStudy}}</td>
       </ng-container>
   
-      <!-- Surname Column -->
+       Surname Column
       <ng-container matColumnDef="CurrentSemesterOfStudy">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Current Semester Of Study</th>
         <td mat-cell *matCellDef="let row">{{row.CurrentSemesterOfStudy}}</td>
@@ -29,13 +29,13 @@
   
     
   
-      <!-- Academic Year And Month Of First Intake Column -->
+       Academic Year And Month Of First Intake Column 
       <ng-container matColumnDef="ModuleCode">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Module Code</th>
         <td mat-cell *matCellDef="let row">{{row.ModuleCode}}</td>
       </ng-container>
   
-      <!-- Academic Year  Column -->
+       Academic Year  Column 
       <ng-container matColumnDef="Ft">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>FT/PT/ODL</th>
         <td mat-cell *matCellDef="let row">{{row.ft}}</td>
@@ -61,9 +61,50 @@
         [pageSizeOptions]="[5, 10, 20]"
         aria-label="Select page">
     </mat-paginator>
-  </div>
+  </div> -->
   
-  <button mat-raised-button color="primary" style="margin-left: 500px;" [routerLink]="['/studentdetail']">Previous</button>
+  <!-- <button mat-raised-button color="primary" style="margin-left: 500px;" [routerLink]="['/studentdetail']">Previous</button> -->
  
+  <html>
 
-
+    <head>
+        <title>View Claim</title>
+    </head>
+    
+    <body>
+        <h2>View All Claims</h2>
+    
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Faculty/School/Cluster Id</th>
+                    <th scope="col">Programme Code</th>
+                    <th scope="col">Current year Of Study</th>
+                    <th scope="col">Current Semester Of Study</th>
+                    <th scope="col">Module Code</th>
+                    <th scope="col">FT/PT/ODL</th>
+                    <th scope="col">Student Status</th>
+                    <th scope="col">Remarks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>56</td>
+                    <td>2021</td>
+                    <td>5</td>
+                    <td>43</td>
+                    <td>FT</td>
+                    <td>active</td>
+                    <td>No</td>
+    
+                </tr>
+    
+            </tbody>
+        </table>
+    
+        <button type="button" class="btn pre active">Previous</button>
+        <button type="button" class="btn next">Next</button>
+    </body>
+    
+    </html>
